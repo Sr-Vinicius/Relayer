@@ -1,0 +1,412 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "STM32WB55 Based Light Switch"
+Date ""
+Rev "Rev-A"
+Comp "Universidade Federal de Uberlândia"
+Comment1 "Device projected for home automation purposes;"
+Comment2 "Max. switching loads of 10A / 2500VA / 300W;"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED_ALT D?
+U 1 1 6063FBCF
+P 1480 1530
+F 0 "D?" H 1473 1746 50  0000 C CNN
+F 1 "LED_ALT" H 1473 1655 50  0001 C CNN
+F 2 "" H 1480 1530 50  0001 C CNN
+F 3 "~" H 1480 1530 50  0001 C CNN
+	1    1480 1530
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60640BBA
+P 1480 1160
+F 0 "R?" H 1548 1206 50  0000 L CNN
+F 1 "100R" H 1548 1115 28  0000 L CNN
+F 2 "" V 1520 1150 50  0001 C CNN
+F 3 "~" H 1480 1160 50  0001 C CNN
+	1    1480 1160
+	1    0    0    -1  
+$EndComp
+$Comp
+L Usr_Sym:2N7002DW-7-F U?
+U 1 1 60658400
+P 1690 1940
+F 0 "U?" H 1998 1936 50  0000 L CNN
+F 1 "2N7002DW-7-F" H 1998 1845 28  0000 L CNN
+F 2 "" H 1370 1830 50  0001 C CNN
+F 3 "" H 1370 1830 50  0001 C CNN
+	1    1690 1940
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1480 1680 1480 1750
+Wire Wire Line
+	1480 1310 1480 1380
+Wire Wire Line
+	1900 2230 1900 2300
+$Comp
+L Device:LED_ALT D?
+U 1 1 60664C54
+P 1900 2450
+F 0 "D?" H 1893 2666 50  0000 C CNN
+F 1 "LED_ALT" H 1893 2575 50  0001 C CNN
+F 2 "" H 1900 2450 50  0001 C CNN
+F 3 "~" H 1900 2450 50  0001 C CNN
+	1    1900 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 2600 1900 2670
+$Comp
+L Device:R_US R?
+U 1 1 60664C5A
+P 1900 2820
+F 0 "R?" H 1968 2866 50  0000 L CNN
+F 1 "100R" H 1968 2775 50  0000 L CNN
+F 2 "" V 1940 2810 50  0001 C CNN
+F 3 "~" H 1900 2820 50  0001 C CNN
+	1    1900 2820
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 6066A280
+P 1250 2640
+F 0 "#PWR?" H 1250 2390 50  0001 C CNN
+F 1 "Earth" H 1255 2467 50  0000 C CNN
+F 2 "" H 1250 2640 50  0001 C CNN
+F 3 "" H 1250 2640 50  0001 C CNN
+	1    1250 2640
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6066BB1E
+P 1700 1530
+F 0 "R?" H 1768 1576 50  0000 L CNN
+F 1 "150R" H 1768 1485 50  0000 L CNN
+F 2 "" V 1740 1520 50  0001 C CNN
+F 3 "~" H 1700 1530 50  0001 C CNN
+	1    1700 1530
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6066CBA0
+P 1920 1380
+F 0 "R?" V 1715 1380 50  0000 C CNN
+F 1 "1M" V 1806 1380 50  0000 C CNN
+F 2 "" V 1960 1370 50  0001 C CNN
+F 3 "~" H 1920 1380 50  0001 C CNN
+	1    1920 1380
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 1680 1700 1750
+Wire Wire Line
+	1700 1380 1770 1380
+$Comp
+L power:Earth #PWR?
+U 1 1 6066DBCF
+P 2130 1810
+F 0 "#PWR?" H 2130 1560 50  0001 C CNN
+F 1 "Earth" H 2130 1660 50  0001 C CNN
+F 2 "" H 2130 1810 50  0001 C CNN
+F 3 "~" H 2130 1810 50  0001 C CNN
+	1    2130 1810
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2070 1380 2130 1380
+Wire Wire Line
+	2130 1380 2130 1720
+Wire Wire Line
+	1900 1750 1900 1720
+Wire Wire Line
+	1900 1720 2130 1720
+Connection ~ 2130 1720
+Wire Wire Line
+	2130 1720 2130 1810
+$Comp
+L Device:R_US R?
+U 1 1 6066FA4F
+P 1680 2450
+F 0 "R?" H 1748 2496 50  0000 L CNN
+F 1 "150R" H 1748 2405 50  0000 L CNN
+F 2 "" V 1720 2440 50  0001 C CNN
+F 3 "~" H 1680 2450 50  0001 C CNN
+	1    1680 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1680 2230 1680 2300
+Wire Wire Line
+	1680 2600 1610 2600
+Wire Wire Line
+	1310 2600 1250 2600
+Wire Wire Line
+	1250 2600 1250 2640
+Wire Wire Line
+	1480 2230 1480 2450
+Wire Wire Line
+	1250 2450 1250 2600
+Connection ~ 1250 2600
+Wire Wire Line
+	1480 2450 1250 2450
+$Comp
+L Device:R_US R?
+U 1 1 6066FF3F
+P 1460 2600
+F 0 "R?" V 1255 2600 50  0000 C CNN
+F 1 "1M" V 1346 2600 50  0000 C CNN
+F 2 "" V 1500 2590 50  0001 C CNN
+F 3 "~" H 1460 2600 50  0001 C CNN
+	1    1460 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 60649182
+P 2170 5710
+F 0 "Q?" H 2374 5756 50  0000 L CNN
+F 1 "2N7002" H 2374 5665 28  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2370 5635 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2170 5710 50  0001 L CNN
+	1    2170 5710
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60652F32
+P 1620 5710
+F 0 "R?" H 1688 5756 50  0000 L CNN
+F 1 "1k" H 1688 5665 50  0000 L CNN
+F 2 "" V 1660 5700 50  0001 C CNN
+F 3 "~" H 1620 5710 50  0001 C CNN
+	1    1620 5710
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60653AB7
+P 1870 5900
+F 0 "R?" H 1938 5946 50  0000 L CNN
+F 1 "10k" H 1938 5855 50  0000 L CNN
+F 2 "" V 1910 5890 50  0001 C CNN
+F 3 "~" H 1870 5900 50  0001 C CNN
+	1    1870 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Usr_Sym:HF32F-G_005-HS RLY?
+U 1 1 606571D6
+P 2610 5150
+F 0 "RLY?" H 2610 5465 50  0000 C CNN
+F 1 "HF32F-G_005-HS" H 2610 5374 50  0000 C CNN
+F 2 "" H 2610 5350 50  0001 C CNN
+F 3 "" H 2610 5350 50  0001 C CNN
+	1    2610 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 6064FBAF
+P 2610 5450
+F 0 "D?" V 2564 5529 50  0000 L CNN
+F 1 "1N4148" V 2655 5529 28  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2610 5275 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2610 5450 50  0001 C CNN
+	1    2610 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 6066BDBF
+P 1870 6070
+F 0 "#PWR?" H 1870 5820 50  0001 C CNN
+F 1 "Earth" H 1870 5920 50  0001 C CNN
+F 2 "" H 1870 6070 50  0001 C CNN
+F 3 "~" H 1870 6070 50  0001 C CNN
+	1    1870 6070
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 6066CAD0
+P 2270 6070
+F 0 "#PWR?" H 2270 5820 50  0001 C CNN
+F 1 "Earth" H 2270 5920 50  0001 C CNN
+F 2 "" H 2270 6070 50  0001 C CNN
+F 3 "~" H 2270 6070 50  0001 C CNN
+	1    2270 6070
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2270 5910 2270 6070
+Wire Wire Line
+	1770 5710 1870 5710
+Wire Wire Line
+	1870 5750 1870 5710
+Connection ~ 1870 5710
+Wire Wire Line
+	1870 5710 1970 5710
+Wire Wire Line
+	1870 6050 1870 6070
+Wire Wire Line
+	2270 5510 2270 5450
+Wire Wire Line
+	2270 5240 2360 5240
+Wire Wire Line
+	2460 5450 2270 5450
+Connection ~ 2270 5450
+Wire Wire Line
+	2270 5450 2270 5240
+$Comp
+L Device:R_US R?
+U 1 1 6064A340
+P 1880 3790
+F 0 "R?" H 1948 3836 50  0000 L CNN
+F 1 "1k" H 1948 3745 50  0000 L CNN
+F 2 "" V 1920 3780 50  0001 C CNN
+F 3 "~" H 1880 3790 50  0001 C CNN
+	1    1880 3790
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6064ADD4
+P 1620 3980
+F 0 "R?" V 1415 3980 50  0000 C CNN
+F 1 "150" V 1506 3980 50  0000 C CNN
+F 2 "" V 1660 3970 50  0001 C CNN
+F 3 "~" H 1620 3980 50  0001 C CNN
+	1    1620 3980
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6064DC3E
+P 2190 4240
+F 0 "C?" H 2305 4286 50  0000 L CNN
+F 1 "100n" H 2305 4195 50  0000 L CNN
+F 2 "" H 2228 4090 50  0001 C CNN
+F 3 "~" H 2190 4240 50  0001 C CNN
+	1    2190 4240
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6064991A
+P 1880 4220
+F 0 "SW?" V 1834 4368 50  0000 C CNN
+F 1 "SW_Push" V 1925 4289 50  0001 C CNN
+F 2 "" H 1880 4420 50  0001 C CNN
+F 3 "~" H 1880 4420 50  0001 C CNN
+	1    1880 4220
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 606521F8
+P 1880 4520
+F 0 "#PWR?" H 1880 4270 50  0001 C CNN
+F 1 "Earth" H 1880 4370 50  0001 C CNN
+F 2 "" H 1880 4520 50  0001 C CNN
+F 3 "~" H 1880 4520 50  0001 C CNN
+	1    1880 4520
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 60652D06
+P 2190 4520
+F 0 "#PWR?" H 2190 4270 50  0001 C CNN
+F 1 "Earth" H 2190 4370 50  0001 C CNN
+F 2 "" H 2190 4520 50  0001 C CNN
+F 3 "~" H 2190 4520 50  0001 C CNN
+	1    2190 4520
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1880 4420 1880 4520
+Wire Wire Line
+	2190 4390 2190 4520
+Wire Wire Line
+	1880 4020 1880 3980
+Wire Wire Line
+	1770 3980 1880 3980
+Connection ~ 1880 3980
+Wire Wire Line
+	1880 3980 1880 3940
+Wire Wire Line
+	2190 4090 2190 3980
+Wire Wire Line
+	2190 3980 1880 3980
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60650044
+P 1480 910
+F 0 "#PWR?" H 1480 760 50  0001 C CNN
+F 1 "+3V3" H 1495 1083 50  0000 C CNN
+F 2 "" H 1480 910 50  0001 C CNN
+F 3 "" H 1480 910 50  0001 C CNN
+	1    1480 910 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1480 910  1480 1010
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60651D39
+P 1900 3070
+F 0 "#PWR?" H 1900 2920 50  0001 C CNN
+F 1 "+3V3" H 1915 3243 50  0000 C CNN
+F 2 "" H 1900 3070 50  0001 C CNN
+F 3 "" H 1900 3070 50  0001 C CNN
+	1    1900 3070
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 3070 1900 2970
+$Comp
+L power:+3V3 #PWR?
+U 1 1 606681F7
+P 1880 3590
+F 0 "#PWR?" H 1880 3440 50  0001 C CNN
+F 1 "+3V3" H 1895 3763 50  0000 C CNN
+F 2 "" H 1880 3590 50  0001 C CNN
+F 3 "" H 1880 3590 50  0001 C CNN
+	1    1880 3590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1880 3590 1880 3640
+$Comp
+L power:+5V #PWR?
+U 1 1 60669583
+P 3390 5140
+F 0 "#PWR?" H 3390 4990 50  0001 C CNN
+F 1 "+5V" H 3405 5313 50  0000 C CNN
+F 2 "" H 3390 5140 50  0001 C CNN
+F 3 "" H 3390 5140 50  0001 C CNN
+	1    3390 5140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3390 5140 3390 5240
+Wire Wire Line
+	3390 5240 2860 5240
+Wire Wire Line
+	2760 5450 3390 5450
+Wire Wire Line
+	3390 5450 3390 5240
+Connection ~ 3390 5240
+$EndSCHEMATC
