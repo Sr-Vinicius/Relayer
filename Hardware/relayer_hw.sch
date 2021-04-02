@@ -409,4 +409,118 @@ Wire Wire Line
 Wire Wire Line
 	3390 5450 3390 5240
 Connection ~ 3390 5240
+$Comp
+L Regulator_Linear:LM1117-3.3 U?
+U 1 1 60667377
+P 3700 6690
+F 0 "U?" H 3700 6932 50  0000 C CNN
+F 1 "LM1117-3.3" H 3700 6841 50  0000 C CNN
+F 2 "" H 3700 6690 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 3700 6690 50  0001 C CNN
+	1    3700 6690
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 60668957
+P 3220 6890
+F 0 "C?" H 3335 6936 50  0000 L CNN
+F 1 "CP1" H 3335 6845 50  0000 L CNN
+F 2 "" H 3220 6890 50  0001 C CNN
+F 3 "~" H 3220 6890 50  0001 C CNN
+	1    3220 6890
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 60669A49
+P 4180 6890
+F 0 "C?" H 4295 6936 50  0000 L CNN
+F 1 "CP1" H 4295 6845 50  0000 L CNN
+F 2 "" H 4180 6890 50  0001 C CNN
+F 3 "~" H 4180 6890 50  0001 C CNN
+	1    4180 6890
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6066C69B
+P 4530 6890
+F 0 "C?" H 4645 6936 50  0000 L CNN
+F 1 "C" H 4645 6845 50  0000 L CNN
+F 2 "" H 4568 6740 50  0001 C CNN
+F 3 "~" H 4530 6890 50  0001 C CNN
+	1    4530 6890
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3220 6740 3220 6690
+Wire Wire Line
+	3220 6690 3400 6690
+Wire Wire Line
+	4000 6690 4180 6690
+Wire Wire Line
+	4180 6690 4180 6740
+Wire Wire Line
+	4530 6740 4530 6690
+Wire Wire Line
+	4530 6690 4180 6690
+Connection ~ 4180 6690
+Wire Wire Line
+	3220 7040 3220 7090
+Wire Wire Line
+	3220 7090 3700 7090
+Wire Wire Line
+	4180 7090 4180 7040
+Wire Wire Line
+	4530 7040 4530 7090
+Wire Wire Line
+	4530 7090 4180 7090
+Connection ~ 4180 7090
+Wire Wire Line
+	3700 6990 3700 7090
+Connection ~ 3700 7090
+Wire Wire Line
+	3700 7090 4180 7090
+$Comp
+L power:Earth #PWR?
+U 1 1 60672AE5
+P 3700 7140
+F 0 "#PWR?" H 3700 6890 50  0001 C CNN
+F 1 "Earth" H 3700 6990 50  0001 C CNN
+F 2 "" H 3700 7140 50  0001 C CNN
+F 3 "~" H 3700 7140 50  0001 C CNN
+	1    3700 7140
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 7140 3700 7090
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60674258
+P 4730 6690
+F 0 "#PWR?" H 4730 6540 50  0001 C CNN
+F 1 "+3V3" V 4745 6818 50  0000 L CNN
+F 2 "" H 4730 6690 50  0001 C CNN
+F 3 "" H 4730 6690 50  0001 C CNN
+	1    4730 6690
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4730 6690 4530 6690
+Connection ~ 4530 6690
+$Comp
+L power:+5V #PWR?
+U 1 1 60676AA9
+P 3220 6590
+F 0 "#PWR?" H 3220 6440 50  0001 C CNN
+F 1 "+5V" H 3235 6763 50  0000 C CNN
+F 2 "" H 3220 6590 50  0001 C CNN
+F 3 "" H 3220 6590 50  0001 C CNN
+	1    3220 6590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3220 6590 3220 6690
+Connection ~ 3220 6690
 $EndSCHEMATC
