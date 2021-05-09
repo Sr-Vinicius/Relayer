@@ -8,9 +8,9 @@ Title "STM32WB55 Based Light Switch"
 Date ""
 Rev "Rev-A"
 Comp "Universidade Federal de Uberlândia"
-Comment1 "Device projected for home automation purposes;"
+Comment1 "All datasheet links are in the components properties ;"
 Comment2 "Max. switching loads of 10A / 2500VA / 300W;"
-Comment3 ""
+Comment3 "Device projected for home automation purposes;"
 Comment4 ""
 $EndDescr
 $Comp
@@ -20,7 +20,7 @@ P 9780 1400
 F 0 "U?" H 9780 1642 50  0000 C CNN
 F 1 "LM1117-3.3" H 9780 1551 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 9780 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 9780 1400 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm1117.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&DCM=yes&ref_url=https%3A%2F%2Fwww.mouser.es%2F&distId=26" H 9780 1400 50  0001 C CNN
 	1    9780 1400
 	1    0    0    -1  
 $EndComp
@@ -30,8 +30,8 @@ U 1 1 60668957
 P 9300 1600
 F 0 "C?" H 9415 1646 50  0000 L CNN
 F 1 "10μF" H 9415 1555 50  0000 L CNN
-F 2 "" H 9300 1600 50  0001 C CNN
-F 3 "~" H 9300 1600 50  0001 C CNN
+F 2 "Usr_pretty_lib:CAPC1608X90" H 9300 1600 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/348/tc_m_e-1874540.pdf" H 9300 1600 50  0001 C CNN
 	1    9300 1600
 	1    0    0    -1  
 $EndComp
@@ -42,7 +42,7 @@ P 10260 1600
 F 0 "C?" H 10375 1646 50  0000 L CNN
 F 1 "22μF" H 10375 1555 50  0000 L CNN
 F 2 "" H 10260 1600 50  0001 C CNN
-F 3 "~" H 10260 1600 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/348/tc_m_e-1874540.pdf" H 10260 1600 50  0001 C CNN
 	1    10260 1600
 	1    0    0    -1  
 $EndComp
@@ -52,8 +52,8 @@ U 1 1 6066C69B
 P 10670 1600
 F 0 "C?" H 10785 1646 50  0000 L CNN
 F 1 "100nF" H 10785 1555 50  0000 L CNN
-F 2 "" H 10708 1450 50  0001 C CNN
-F 3 "~" H 10670 1600 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10708 1450 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 10670 1600 50  0001 C CNN
 	1    10670 1600
 	1    0    0    -1  
 $EndComp
@@ -125,20 +125,9 @@ P 8260 1580
 F 0 "PS?" H 8260 1885 50  0000 C CNN
 F 1 "HLK-2M05" H 8260 1794 50  0000 C CNN
 F 2 "" H 8260 1750 50  0001 C CNN
-F 3 "" H 8260 1750 50  0001 C CNN
+F 3 "http://www.hlktech.net/product_detail.php?ProId=68" H 8260 1750 50  0001 C CNN
 	1    8260 1580
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Fuse F?
-U 1 1 606867F7
-P 6510 1400
-F 0 "F?" V 6313 1400 50  0000 C CNN
-F 1 "Fuse" V 6404 1400 50  0000 C CNN
-F 2 "" V 6440 1400 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1806130715_Littelfuse-0230-500MXP_C178894.pdf" H 6510 1400 50  0001 C CNN
-	1    6510 1400
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:Varistor_US RV?
@@ -147,7 +136,7 @@ P 6730 1600
 F 0 "RV?" H 6833 1646 50  0000 C CNN
 F 1 "Varistor_US" H 6794 1555 50  0001 L CNN
 F 2 "Varistor:RV_Disc_D12mm_W6.1mm_P7.5mm" V 6660 1600 50  0001 C CNN
-F 3 "~" H 6730 1600 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/54/mov10d-777448.pdf" H 6730 1600 50  0001 C CNN
 	1    6730 1600
 	1    0    0    -1  
 $EndComp
@@ -157,8 +146,8 @@ U 1 1 606918D0
 P 8850 1600
 F 0 "C?" H 8965 1646 50  0000 L CNN
 F 1 "220μF" H 8965 1555 50  0000 L CNN
-F 2 "" H 8850 1600 50  0001 C CNN
-F 3 "~" H 8850 1600 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8850 1600 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_A4055_ESE-1140496.pdf" H 8850 1600 50  0001 C CNN
 	1    8850 1600
 	1    0    0    -1  
 $EndComp
@@ -169,7 +158,7 @@ P 7060 1600
 F 0 "C?" H 7254 1567 50  0000 R BNN
 F 1 "100nF/275V" H 7294 1358 39  0000 R CNN
 F 2 "Capacitor_THT:C_Rect_L18.0mm_W6.0mm_P15.00mm_FKS3_FKP3" H 7098 1450 50  0001 C CNN
-F 3 "~" H 7060 1600 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/212/1/KEM_F3006_R46_X2_275_125C-1102328.pdf" H 7060 1600 50  0001 C CNN
 	1    7060 1600
 	1    0    0    -1  
 $EndComp
@@ -269,9 +258,9 @@ L Device:C C?
 U 1 1 6086653E
 P 1350 4120
 F 0 "C?" H 1465 4166 50  0000 L CNN
-F 1 "C" H 1465 4075 50  0000 L CNN
-F 2 "" H 1388 3970 50  0001 C CNN
-F 3 "~" H 1350 4120 50  0001 C CNN
+F 1 "10pF" H 1465 4075 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1388 3970 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 1350 4120 50  0001 C CNN
 	1    1350 4120
 	1    0    0    -1  
 $EndComp
@@ -280,7 +269,7 @@ L Device:C C?
 U 1 1 60867EC8
 P 1850 4120
 F 0 "C?" H 1965 4166 50  0000 L CNN
-F 1 "C" H 1965 4075 50  0000 L CNN
+F 1 "10pF" H 1965 4075 50  0000 L CNN
 F 2 "" H 1888 3970 50  0001 C CNN
 F 3 "~" H 1850 4120 50  0001 C CNN
 	1    1850 4120
@@ -292,8 +281,8 @@ U 1 1 608737FB
 P 1600 3930
 F 0 "Y?" H 1600 4198 50  0000 C CNN
 F 1 "Crystal" H 1600 4107 50  0000 C CNN
-F 2 "" H 1600 3930 50  0001 C CNN
-F 3 "~" H 1600 3930 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering" H 1600 3930 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/905/c_NX2012SA-STD-MUB-1_e-1317508.pdf" H 1600 3930 50  0001 C CNN
 	1    1600 3930
 	1    0    0    -1  
 $EndComp
@@ -360,8 +349,8 @@ U 1 1 607F4580
 P 4360 5170
 F 0 "Y?" H 4554 5216 50  0000 L CNN
 F 1 "Crystal_GND23" H 4554 5125 50  0000 L CNN
-F 2 "" H 4360 5170 50  0001 C CNN
-F 3 "~" H 4360 5170 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 4360 5170 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/122/ECX_1637B-1649431.pdf" H 4360 5170 50  0001 C CNN
 	1    4360 5170
 	1    0    0    -1  
 $EndComp
@@ -372,7 +361,7 @@ P 7560 1600
 F 0 "L?" H 7560 1881 50  0000 C CNN
 F 1 "10mH" H 7560 1790 50  0000 C CNN
 F 2 "" H 7560 1600 50  0001 C CNN
-F 3 "~" H 7560 1600 50  0001 C CNN
+F 3 "https://www.alldatasheet.com/datasheet-pdf/pdf/612038/MORNSUN/FL2D-Z5-103.html" H 7560 1600 50  0001 C CNN
 	1    7560 1600
 	1    0    0    -1  
 $EndComp
@@ -406,7 +395,7 @@ U 1 1 6089507D
 P 3610 2420
 F 0 "J?" V 3574 2132 50  0000 R CNN
 F 1 "STLink" V 3483 2132 50  0000 R CNN
-F 2 "" H 3610 2420 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3610 2420 50  0001 C CNN
 F 3 "~" H 3610 2420 50  0001 C CNN
 	1    3610 2420
 	0    -1   -1   0   
@@ -466,7 +455,7 @@ U 1 1 609E9DC5
 P 1180 4720
 F 0 "J?" H 1169 4839 50  0000 C BNN
 F 1 "BOOT0" H 1143 4800 50  0000 C CNN
-F 2 "" H 1180 4720 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1180 4720 50  0001 C CNN
 F 3 "~" H 1180 4720 50  0001 C CNN
 	1    1180 4720
 	-1   0    0    1   
@@ -639,9 +628,9 @@ L Device:C C?
 U 1 1 60C4AA4B
 P 1450 6130
 F 0 "C?" H 1335 6084 50  0000 R CNN
-F 1 "C" H 1335 6175 50  0000 R CNN
-F 2 "" H 1488 5980 50  0001 C CNN
-F 3 "~" H 1450 6130 50  0001 C CNN
+F 1 "100nF" H 1335 6175 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1488 5980 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 1450 6130 50  0001 C CNN
 	1    1450 6130
 	-1   0    0    1   
 $EndComp
@@ -665,9 +654,9 @@ L Device:C C?
 U 1 1 60B313AF
 P 1450 5420
 F 0 "C?" H 1335 5374 50  0000 R CNN
-F 1 "C" H 1335 5465 50  0000 R CNN
-F 2 "" H 1488 5270 50  0001 C CNN
-F 3 "~" H 1450 5420 50  0001 C CNN
+F 1 "100nF" H 1335 5465 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1488 5270 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 1450 5420 50  0001 C CNN
 	1    1450 5420
 	-1   0    0    1   
 $EndComp
@@ -802,7 +791,7 @@ U 1 1 6064FBAF
 P 1920 2390
 F 0 "D?" H 1874 2469 50  0000 R TNN
 F 1 "1N4148" H 1965 2469 50  0000 L TNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1920 2215 50  0001 C CNN
+F 2 "Usr_pretty_lib:SODFL1608X70N" H 1920 2215 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1920 2390 50  0001 C CNN
 	1    1920 2390
 	1    0    0    1   
@@ -841,17 +830,6 @@ F 2 "" H 3410 4230 50  0001 C CNN
 F 3 "" H 3410 4230 50  0001 C CNN
 	1    3410 4180
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 609AB9F8
-P 4850 3130
-F 0 "R?" H 4918 3176 50  0000 L CNN
-F 1 "750R" H 4918 3085 50  0000 L CNN
-F 2 "" V 4890 3120 50  0001 C CNN
-F 3 "~" H 4850 3130 50  0001 C CNN
-	1    4850 3130
-	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	5000 3130 5050 3130
@@ -958,7 +936,7 @@ P 4220 6060
 F 0 "IPD?" H 4170 6425 50  0000 C CNN
 F 1 "MLPF-WB55-01E3" H 4170 6334 50  0000 C CNN
 F 2 "" H 4220 6060 50  0001 C CNN
-F 3 "" H 4220 6060 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/mlpf-wb55-01e3.pdf" H 4220 6060 50  0001 C CNN
 	1    4220 6060
 	1    0    0    -1  
 $EndComp
@@ -1043,17 +1021,6 @@ F 2 "Package_TO_SOT_SMD:SOT-23" H 2560 2575 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2360 2650 50  0001 L CNN
 	1    2360 2650
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 60652F32
-P 2910 2650
-F 0 "R?" H 2978 2696 50  0000 L CNN
-F 1 "1k" H 2978 2605 50  0000 L CNN
-F 2 "" V 2950 2640 50  0001 C CNN
-F 3 "~" H 2910 2650 50  0001 C CNN
-	1    2910 2650
-	0    1    -1   0   
 $EndComp
 $Comp
 L Device:R_US R?
@@ -1147,9 +1114,9 @@ L Device:C C?
 U 1 1 607C1866
 P 7980 4140
 F 0 "C?" H 8095 4186 50  0000 L CNN
-F 1 "100n" H 8095 4095 50  0000 L CNN
-F 2 "" H 8018 3990 50  0001 C CNN
-F 3 "~" H 7980 4140 50  0001 C CNN
+F 1 "100nF" H 8095 4095 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8018 3990 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 7980 4140 50  0001 C CNN
 	1    7980 4140
 	1    0    0    -1  
 $EndComp
@@ -1171,9 +1138,9 @@ L Device:C C?
 U 1 1 607E9B06
 P 8530 4140
 F 0 "C?" H 8645 4186 50  0000 L CNN
-F 1 "100n" H 8645 4095 50  0000 L CNN
-F 2 "" H 8568 3990 50  0001 C CNN
-F 3 "~" H 8530 4140 50  0001 C CNN
+F 1 "100nF" H 8645 4095 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8568 3990 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 8530 4140 50  0001 C CNN
 	1    8530 4140
 	1    0    0    -1  
 $EndComp
@@ -1228,9 +1195,9 @@ L Device:C C?
 U 1 1 608EF240
 P 7440 4140
 F 0 "C?" H 7555 4186 50  0000 L CNN
-F 1 "100n" H 7555 4095 50  0000 L CNN
-F 2 "" H 7478 3990 50  0001 C CNN
-F 3 "~" H 7440 4140 50  0001 C CNN
+F 1 "100nF" H 7555 4095 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7478 3990 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 7440 4140 50  0001 C CNN
 	1    7440 4140
 	1    0    0    -1  
 $EndComp
@@ -1327,8 +1294,8 @@ U 1 1 60797B1F
 P 10110 3230
 F 0 "C?" H 10225 3276 50  0000 L CNN
 F 1 "100pF" H 10146 3146 50  0000 L CNN
-F 2 "" H 10148 3080 50  0001 C CNN
-F 3 "~" H 10110 3230 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10148 3080 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 10110 3230 50  0001 C CNN
 	1    10110 3230
 	1    0    0    -1  
 $EndComp
@@ -1338,8 +1305,8 @@ U 1 1 60797B19
 P 9710 3230
 F 0 "C?" H 9825 3276 50  0000 L CNN
 F 1 "100nF" H 9746 3145 50  0000 L CNN
-F 2 "" H 9748 3080 50  0001 C CNN
-F 3 "~" H 9710 3230 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9748 3080 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 9710 3230 50  0001 C CNN
 	1    9710 3230
 	1    0    0    -1  
 $EndComp
@@ -1412,8 +1379,8 @@ U 1 1 6080FC2D
 P 8660 3230
 F 0 "C?" H 8775 3276 50  0000 L CNN
 F 1 "100nF" H 8696 3146 50  0000 L CNN
-F 2 "" H 8698 3080 50  0001 C CNN
-F 3 "~" H 8660 3230 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8698 3080 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 8660 3230 50  0001 C CNN
 	1    8660 3230
 	1    0    0    -1  
 $EndComp
@@ -1423,8 +1390,8 @@ U 1 1 6080FC27
 P 8260 3230
 F 0 "C?" H 8375 3276 50  0000 L CNN
 F 1 "4.7μF" H 8296 3145 50  0000 L CNN
-F 2 "" H 8298 3080 50  0001 C CNN
-F 3 "~" H 8260 3230 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 8298 3080 50  0001 C CNN
+F 3 "https://br.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL03A475MQ5C65C?qs=sGAEpiMZZMuMW9TJLBQkXnK2T9n4gY42cYfvJEEERh4%3D" H 8260 3230 50  0001 C CNN
 	1    8260 3230
 	1    0    0    -1  
 $EndComp
@@ -1501,8 +1468,8 @@ U 1 1 6077BE47
 P 6810 3230
 F 0 "C?" H 6925 3276 50  0000 L CNN
 F 1 "100nF" H 6846 3146 50  0000 L CNN
-F 2 "" H 6848 3080 50  0001 C CNN
-F 3 "~" H 6810 3230 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6848 3080 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 6810 3230 50  0001 C CNN
 	1    6810 3230
 	1    0    0    -1  
 $EndComp
@@ -1512,8 +1479,8 @@ U 1 1 6077BE41
 P 6410 3230
 F 0 "C?" H 6525 3276 50  0000 L CNN
 F 1 "4.7μF" H 6446 3145 50  0000 L CNN
-F 2 "" H 6448 3080 50  0001 C CNN
-F 3 "~" H 6410 3230 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6448 3080 50  0001 C CNN
+F 3 "https://br.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL03A475MQ5C65C?qs=sGAEpiMZZMuMW9TJLBQkXnK2T9n4gY42cYfvJEEERh4%3D" H 6410 3230 50  0001 C CNN
 	1    6410 3230
 	1    0    0    -1  
 $EndComp
@@ -1523,8 +1490,8 @@ U 1 1 6077A107
 P 7610 3230
 F 0 "C?" H 7725 3276 50  0000 L CNN
 F 1 "100nF" H 7646 3146 50  0000 L CNN
-F 2 "" H 7648 3080 50  0001 C CNN
-F 3 "~" H 7610 3230 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7648 3080 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 7610 3230 50  0001 C CNN
 	1    7610 3230
 	1    0    0    -1  
 $EndComp
@@ -1534,8 +1501,8 @@ U 1 1 6077069B
 P 7210 3230
 F 0 "C?" H 7325 3276 50  0000 L CNN
 F 1 "100nF" H 7246 3146 50  0000 L CNN
-F 2 "" H 7248 3080 50  0001 C CNN
-F 3 "~" H 7210 3230 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7248 3080 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 7210 3230 50  0001 C CNN
 	1    7210 3230
 	1    0    0    -1  
 $EndComp
@@ -1550,10 +1517,10 @@ RF Switch
 Wire Notes Line
 	5790 5650 5790 5390
 Text Notes 5300 5380 0    50   ~ 0
-Impedance Match Network
-Text Notes 8270 1000 0    59   ~ 12
+Impedance Matching Network
+Text Notes 8270 1000 0    71   ~ 14
 Power Supply
-Text Notes 8050 2600 0    59   ~ 12
+Text Notes 8050 2600 0    71   ~ 14
 Decoupling Capacitors
 Wire Notes Line
 	2360 1700 2360 1800
@@ -1561,4 +1528,37 @@ Wire Notes Line
 	2360 1800 2670 1800
 Text Notes 2680 1830 0    50   ~ 0
 Neutral Conductor
+$Comp
+L Device:R_US R?
+U 1 1 609AB9F8
+P 4850 3130
+F 0 "R?" H 4918 3176 50  0000 L CNN
+F 1 "750R" H 4918 3085 50  0000 L CNN
+F 2 "" V 4890 3120 50  0001 C CNN
+F 3 "~" H 4850 3130 50  0001 C CNN
+	1    4850 3130
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60652F32
+P 2910 2650
+F 0 "R?" V 2978 2696 50  0000 L CNN
+F 1 "1k" V 2978 2526 50  0000 L CNN
+F 2 "" V 2950 2640 50  0001 C CNN
+F 3 "~" H 2910 2650 50  0001 C CNN
+	1    2910 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 606867F7
+P 6510 1400
+F 0 "F?" V 6313 1400 50  0000 C CNN
+F 1 "JFC2410-0500TS" V 6404 1339 39  0000 L CNN
+F 2 "Fuse:Fuse_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 6440 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1806130715_Littelfuse-0230-500MXP_C178894.pdf" H 6510 1400 50  0001 C CNN
+	1    6510 1400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
