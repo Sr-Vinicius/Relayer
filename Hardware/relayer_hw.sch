@@ -14,10 +14,10 @@ Comment3 "Device projected for home automation purposes;"
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Linear:LM1117-3.3 U?
+L Regulator_Linear:LM1117-3.3 U3
 U 1 1 60667377
 P 9780 1400
-F 0 "U?" H 9780 1642 50  0000 C CNN
+F 0 "U3" H 9780 1642 50  0000 C CNN
 F 1 "LM1117-3.3" H 9780 1551 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 9780 1400 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lm1117.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&DCM=yes&ref_url=https%3A%2F%2Fwww.mouser.es%2F&distId=26" H 9780 1400 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "https://www.ti.com/lit/ds/symlink/lm1117.pdf?HQS=dis-mous-null-mousermode-d
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C16
 U 1 1 60668957
 P 9300 1600
-F 0 "C?" H 9415 1646 50  0000 L CNN
+F 0 "C16" H 9415 1646 50  0000 L CNN
 F 1 "10μF" H 9415 1555 50  0000 L CNN
 F 2 "Usr_pretty_lib:CAPC1608X90" H 9300 1600 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/348/tc_m_e-1874540.pdf" H 9300 1600 50  0001 C CNN
@@ -36,21 +36,21 @@ F 3 "https://br.mouser.com/datasheet/2/348/tc_m_e-1874540.pdf" H 9300 1600 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C19
 U 1 1 60669A49
 P 10260 1600
-F 0 "C?" H 10375 1646 50  0000 L CNN
+F 0 "C19" H 10375 1646 50  0000 L CNN
 F 1 "22μF" H 10375 1555 50  0000 L CNN
-F 2 "" H 10260 1600 50  0001 C CNN
+F 2 "Usr_pretty_lib:CAPC1608X90" H 10260 1600 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/348/tc_m_e-1874540.pdf" H 10260 1600 50  0001 C CNN
 	1    10260 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C20
 U 1 1 6066C69B
 P 10670 1600
-F 0 "C?" H 10785 1646 50  0000 L CNN
+F 0 "C20" H 10785 1646 50  0000 L CNN
 F 1 "100nF" H 10785 1555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 10708 1450 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 10670 1600 50  0001 C CNN
@@ -81,10 +81,10 @@ Connection ~ 9780 1800
 Wire Wire Line
 	9780 1800 10260 1800
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR036
 U 1 1 60672AE5
 P 9780 1850
-F 0 "#PWR?" H 9780 1600 50  0001 C CNN
+F 0 "#PWR036" H 9780 1600 50  0001 C CNN
 F 1 "Earth" H 9780 1700 50  0001 C CNN
 F 2 "" H 9780 1850 50  0001 C CNN
 F 3 "~" H 9780 1850 50  0001 C CNN
@@ -93,47 +93,25 @@ F 3 "~" H 9780 1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9780 1850 9780 1800
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60674258
-P 10870 1300
-F 0 "#PWR?" H 10870 1150 50  0001 C CNN
-F 1 "+3V3" V 10885 1428 50  0000 L CNN
-F 2 "" H 10870 1300 50  0001 C CNN
-F 3 "" H 10870 1300 50  0001 C CNN
-	1    10870 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60676AA9
-P 9300 1300
-F 0 "#PWR?" H 9300 1150 50  0001 C CNN
-F 1 "+5V" H 9315 1473 50  0000 C CNN
-F 2 "" H 9300 1300 50  0001 C CNN
-F 3 "" H 9300 1300 50  0001 C CNN
-	1    9300 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9300 1300 9300 1400
 Connection ~ 9300 1400
 $Comp
-L Usr_Sym:HLK-2M05 PS?
+L Usr_Sym:HLK-2M05 PS1
 U 1 1 60684E63
 P 8260 1580
-F 0 "PS?" H 8260 1885 50  0000 C CNN
+F 0 "PS1" H 8260 1885 50  0000 C CNN
 F 1 "HLK-2M05" H 8260 1794 50  0000 C CNN
-F 2 "" H 8260 1750 50  0001 C CNN
+F 2 "Usr_pretty_lib:HLK-2M05" H 8260 1750 50  0001 C CNN
 F 3 "http://www.hlktech.net/product_detail.php?ProId=68" H 8260 1750 50  0001 C CNN
 	1    8260 1580
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Varistor_US RV?
+L Device:Varistor_US RV1
 U 1 1 60690A8A
 P 6730 1600
-F 0 "RV?" H 6833 1646 50  0000 C CNN
+F 0 "RV1" H 6833 1646 50  0000 C CNN
 F 1 "Varistor_US" H 6794 1555 50  0001 L CNN
 F 2 "Varistor:RV_Disc_D12mm_W6.1mm_P7.5mm" V 6660 1600 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/54/mov10d-777448.pdf" H 6730 1600 50  0001 C CNN
@@ -141,10 +119,10 @@ F 3 "https://br.mouser.com/datasheet/2/54/mov10d-777448.pdf" H 6730 1600 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C15
 U 1 1 606918D0
 P 8850 1600
-F 0 "C?" H 8965 1646 50  0000 L CNN
+F 0 "C15" H 8965 1646 50  0000 L CNN
 F 1 "220μF" H 8965 1555 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8850 1600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/212/KEM_A4055_ESE-1140496.pdf" H 8850 1600 50  0001 C CNN
@@ -152,10 +130,10 @@ F 3 "https://www.mouser.com/datasheet/2/212/KEM_A4055_ESE-1140496.pdf" H 8850 16
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C7
 U 1 1 60693778
 P 7060 1600
-F 0 "C?" H 7254 1567 50  0000 R BNN
+F 0 "C7" H 7254 1567 50  0000 R BNN
 F 1 "100nF/275V" H 7294 1358 39  0000 R CNN
 F 2 "Capacitor_THT:C_Rect_L18.0mm_W6.0mm_P15.00mm_FKS3_FKP3" H 7098 1450 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/212/1/KEM_F3006_R46_X2_275_125C-1102328.pdf" H 7060 1600 50  0001 C CNN
@@ -206,10 +184,10 @@ Wire Wire Line
 Wire Wire Line
 	6730 1800 7060 1800
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J4
 U 1 1 606C0136
 P 6060 1650
-F 0 "J?" H 5978 1325 50  0000 C CNN
+F 0 "J4" H 5978 1325 50  0000 C CNN
 F 1 "AC_IN" H 5978 1416 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6060 1650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/1912251631_Ningbo-Kangnex-Elec-WJ127-5-0-2P_C3703.pdf" H 6060 1650 50  0001 C CNN
@@ -254,10 +232,10 @@ VBAT
 Text GLabel 3660 3330 1    50   Input ~ 0
 VDDUSB
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 6086653E
 P 1350 4120
-F 0 "C?" H 1465 4166 50  0000 L CNN
+F 0 "C1" H 1465 4166 50  0000 L CNN
 F 1 "10pF" H 1465 4075 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1388 3970 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 1350 4120 50  0001 C CNN
@@ -265,10 +243,10 @@ F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C4
 U 1 1 60867EC8
 P 1850 4120
-F 0 "C?" H 1965 4166 50  0000 L CNN
+F 0 "C4" H 1965 4166 50  0000 L CNN
 F 1 "10pF" H 1965 4075 50  0000 L CNN
 F 2 "" H 1888 3970 50  0001 C CNN
 F 3 "~" H 1850 4120 50  0001 C CNN
@@ -276,10 +254,10 @@ F 3 "~" H 1850 4120 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 608737FB
 P 1600 3930
-F 0 "Y?" H 1600 4198 50  0000 C CNN
+F 0 "Y1" H 1600 4198 50  0000 C CNN
 F 1 "Crystal" H 1600 4107 50  0000 C CNN
 F 2 "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering" H 1600 3930 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/905/c_NX2012SA-STD-MUB-1_e-1317508.pdf" H 1600 3930 50  0001 C CNN
@@ -302,10 +280,10 @@ Wire Wire Line
 	1350 3730 2560 3730
 Connection ~ 1350 3930
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR09
 U 1 1 608E31D7
 P 1850 4280
-F 0 "#PWR?" H 1850 4030 50  0001 C CNN
+F 0 "#PWR09" H 1850 4030 50  0001 C CNN
 F 1 "Earth" H 1850 4130 50  0001 C CNN
 F 2 "" H 1850 4280 50  0001 C CNN
 F 3 "~" H 1850 4280 50  0001 C CNN
@@ -313,10 +291,10 @@ F 3 "~" H 1850 4280 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR02
 U 1 1 608E4085
 P 1350 4280
-F 0 "#PWR?" H 1350 4030 50  0001 C CNN
+F 0 "#PWR02" H 1350 4030 50  0001 C CNN
 F 1 "Earth" H 1350 4130 50  0001 C CNN
 F 2 "" H 1350 4280 50  0001 C CNN
 F 3 "~" H 1350 4280 50  0001 C CNN
@@ -333,10 +311,10 @@ Wire Wire Line
 Wire Wire Line
 	4560 4730 4260 4730
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR017
 U 1 1 6081E064
 P 4360 5420
-F 0 "#PWR?" H 4360 5170 50  0001 C CNN
+F 0 "#PWR017" H 4360 5170 50  0001 C CNN
 F 1 "Earth" H 4360 5270 50  0001 C CNN
 F 2 "" H 4360 5420 50  0001 C CNN
 F 3 "~" H 4360 5420 50  0001 C CNN
@@ -344,10 +322,10 @@ F 3 "~" H 4360 5420 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal_GND24 Y?
+L Device:Crystal_GND24 Y2
 U 1 1 607F4580
 P 4360 5170
-F 0 "Y?" H 4554 5216 50  0000 L CNN
+F 0 "Y2" H 4554 5216 50  0000 L CNN
 F 1 "Crystal_GND23" H 4554 5125 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 4360 5170 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/122/ECX_1637B-1649431.pdf" H 4360 5170 50  0001 C CNN
@@ -355,20 +333,18 @@ F 3 "https://br.mouser.com/datasheet/2/122/ECX_1637B-1649431.pdf" H 4360 5170 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Core_Iron_Coupled L?
+L Usr_Sym:L_Core_Ferrite_Coupled L1
 U 1 1 6090B947
 P 7560 1600
-F 0 "L?" H 7560 1881 50  0000 C CNN
+F 0 "L1" H 7560 1881 50  0000 C CNN
 F 1 "10mH" H 7560 1790 50  0000 C CNN
-F 2 "" H 7560 1600 50  0001 C CNN
+F 2 "Usr_pretty_lib:FL2D-Z5-103" H 7560 1600 50  0001 C CNN
 F 3 "https://www.alldatasheet.com/datasheet-pdf/pdf/612038/MORNSUN/FL2D-Z5-103.html" H 7560 1600 50  0001 C CNN
 	1    7560 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7760 1500 7860 1500
-Wire Wire Line
-	7860 1700 7760 1700
+	7860 1700 7810 1700
 Wire Wire Line
 	7360 1700 7310 1700
 Wire Wire Line
@@ -390,10 +366,10 @@ Wire Wire Line
 Wire Wire Line
 	1350 4270 1350 4280
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J3
 U 1 1 6089507D
 P 3610 2420
-F 0 "J?" V 3574 2132 50  0000 R CNN
+F 0 "J3" V 3574 2132 50  0000 R CNN
 F 1 "STLink" V 3483 2132 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3610 2420 50  0001 C CNN
 F 3 "~" H 3610 2420 50  0001 C CNN
@@ -401,10 +377,10 @@ F 3 "~" H 3610 2420 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR013
 U 1 1 6089792E
 P 3710 2750
-F 0 "#PWR?" H 3710 2500 50  0001 C CNN
+F 0 "#PWR013" H 3710 2500 50  0001 C CNN
 F 1 "Earth" H 3710 2600 50  0001 C CNN
 F 2 "" H 3710 2750 50  0001 C CNN
 F 3 "~" H 3710 2750 50  0001 C CNN
@@ -412,10 +388,10 @@ F 3 "~" H 3710 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR012
 U 1 1 60898688
 P 3610 2750
-F 0 "#PWR?" H 3610 2600 50  0001 C CNN
+F 0 "#PWR012" H 3610 2600 50  0001 C CNN
 F 1 "+3V3" H 3625 2923 50  0000 C CNN
 F 2 "" H 3610 2750 50  0001 C CNN
 F 3 "" H 3610 2750 50  0001 C CNN
@@ -439,21 +415,21 @@ Wire Wire Line
 Wire Wire Line
 	3810 3070 3810 2620
 $Comp
-L Device:R_US R?
+L Device:R_US R2
 U 1 1 60A1153A
 P 1910 4620
-F 0 "R?" H 1842 4574 50  0000 R CNN
+F 0 "R2" H 1842 4574 50  0000 R CNN
 F 1 "1k" H 1842 4665 50  0000 R CNN
-F 2 "" V 1950 4610 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1950 4610 50  0001 C CNN
 F 3 "~" H 1910 4620 50  0001 C CNN
 	1    1910 4620
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J1
 U 1 1 609E9DC5
 P 1180 4720
-F 0 "J?" H 1169 4839 50  0000 C BNN
+F 0 "J1" H 1169 4839 50  0000 C BNN
 F 1 "BOOT0" H 1143 4800 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1180 4720 50  0001 C CNN
 F 3 "~" H 1180 4720 50  0001 C CNN
@@ -461,21 +437,21 @@ F 3 "~" H 1180 4720 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R1
 U 1 1 60A5E189
 P 1710 4770
-F 0 "R?" H 1642 4724 50  0000 R CNN
+F 0 "R1" H 1642 4724 50  0000 R CNN
 F 1 "10k" H 1642 4815 50  0000 R CNN
-F 2 "" V 1750 4760 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1750 4760 50  0001 C CNN
 F 3 "~" H 1710 4770 50  0001 C CNN
 	1    1710 4770
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR05
 U 1 1 60A6FD6F
 P 1530 4940
-F 0 "#PWR?" H 1530 4790 50  0001 C CNN
+F 0 "#PWR05" H 1530 4790 50  0001 C CNN
 F 1 "+3V3" H 1545 5113 50  0000 C CNN
 F 2 "" H 1530 4940 50  0001 C CNN
 F 3 "" H 1530 4940 50  0001 C CNN
@@ -483,10 +459,10 @@ F 3 "" H 1530 4940 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR06
 U 1 1 60AA89C9
 P 1710 4950
-F 0 "#PWR?" H 1710 4700 50  0001 C CNN
+F 0 "#PWR06" H 1710 4700 50  0001 C CNN
 F 1 "Earth" H 1710 4800 50  0001 C CNN
 F 2 "" H 1710 4950 50  0001 C CNN
 F 3 "~" H 1710 4950 50  0001 C CNN
@@ -546,21 +522,21 @@ Wire Wire Line
 	6260 1800 6310 1800
 Connection ~ 6310 1800
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 60B1A580
 P 1780 5470
-F 0 "SW?" V 1734 5422 50  0000 R CNN
+F 0 "SW1" V 1734 5422 50  0000 R CNN
 F 1 "NRST" V 1825 5422 50  0000 R CNN
 F 2 "" H 1780 5670 50  0001 C CNN
-F 3 "~" H 1780 5670 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/Tactile-Switches_HYP-Hongyuan-Precision-1TS002B-1900-4300-CT_C318823.html" H 1780 5670 50  0001 C CNN
 	1    1780 5470
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR07
 U 1 1 60BDD589
 P 1780 5670
-F 0 "#PWR?" H 1780 5420 50  0001 C CNN
+F 0 "#PWR07" H 1780 5420 50  0001 C CNN
 F 1 "Earth" H 1780 5520 50  0001 C CNN
 F 2 "" H 1780 5670 50  0001 C CNN
 F 3 "~" H 1780 5670 50  0001 C CNN
@@ -568,10 +544,10 @@ F 3 "~" H 1780 5670 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR08
 U 1 1 60C4AA5C
 P 1780 6380
-F 0 "#PWR?" H 1780 6130 50  0001 C CNN
+F 0 "#PWR08" H 1780 6130 50  0001 C CNN
 F 1 "Earth" H 1780 6230 50  0001 C CNN
 F 2 "" H 1780 6380 50  0001 C CNN
 F 3 "~" H 1780 6380 50  0001 C CNN
@@ -579,13 +555,13 @@ F 3 "~" H 1780 6380 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW2
 U 1 1 60C4AA51
 P 1780 6180
-F 0 "SW?" V 1734 6132 50  0000 R CNN
+F 0 "SW2" V 1734 6132 50  0000 R CNN
 F 1 "USR_SW" V 1825 6132 50  0000 R CNN
-F 2 "" H 1780 6380 50  0001 C CNN
-F 3 "~" H 1780 6380 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H13mm" H 1780 6380 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1912111437_SHOU-HAN-TS6620CJ_C393949.pdf" H 1780 6380 50  0001 C CNN
 	1    1780 6180
 	0    -1   1    0   
 $EndComp
@@ -602,32 +578,32 @@ Wire Wire Line
 Wire Wire Line
 	1780 5220 1850 5220
 $Comp
-L Device:R_US R?
+L Device:R_US R3
 U 1 1 60C09DED
 P 2000 5220
-F 0 "R?" V 1795 5220 50  0000 C CNN
+F 0 "R3" V 1795 5220 50  0000 C CNN
 F 1 "150R" V 1886 5220 50  0000 C CNN
-F 2 "" V 2040 5210 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2040 5210 50  0001 C CNN
 F 3 "~" H 2000 5220 50  0001 C CNN
 	1    2000 5220
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R4
 U 1 1 60C4AA69
 P 2000 5930
-F 0 "R?" V 1795 5930 50  0000 C CNN
+F 0 "R4" V 1795 5930 50  0000 C CNN
 F 1 "150R" V 1886 5930 50  0000 C CNN
-F 2 "" V 2040 5920 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2040 5920 50  0001 C CNN
 F 3 "~" H 2000 5930 50  0001 C CNN
 	1    2000 5930
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 60C4AA4B
 P 1450 6130
-F 0 "C?" H 1335 6084 50  0000 R CNN
+F 0 "C3" H 1335 6084 50  0000 R CNN
 F 1 "100nF" H 1335 6175 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1488 5980 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 1450 6130 50  0001 C CNN
@@ -639,10 +615,10 @@ Wire Wire Line
 Wire Wire Line
 	1450 5670 1450 5570
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR03
 U 1 1 60BDEB4A
 P 1450 5670
-F 0 "#PWR?" H 1450 5420 50  0001 C CNN
+F 0 "#PWR03" H 1450 5420 50  0001 C CNN
 F 1 "Earth" H 1450 5520 50  0001 C CNN
 F 2 "" H 1450 5670 50  0001 C CNN
 F 3 "~" H 1450 5670 50  0001 C CNN
@@ -650,10 +626,10 @@ F 3 "~" H 1450 5670 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 60B313AF
 P 1450 5420
-F 0 "C?" H 1335 5374 50  0000 R CNN
+F 0 "C2" H 1335 5374 50  0000 R CNN
 F 1 "100nF" H 1335 5465 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1488 5270 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 1450 5420 50  0001 C CNN
@@ -661,10 +637,10 @@ F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR04
 U 1 1 60C4AA62
 P 1450 6380
-F 0 "#PWR?" H 1450 6130 50  0001 C CNN
+F 0 "#PWR04" H 1450 6130 50  0001 C CNN
 F 1 "Earth" H 1450 6230 50  0001 C CNN
 F 2 "" H 1450 6380 50  0001 C CNN
 F 3 "~" H 1450 6380 50  0001 C CNN
@@ -682,13 +658,13 @@ Wire Wire Line
 Wire Wire Line
 	1450 5270 1450 5220
 $Comp
-L Device:LED_ALT D?
+L Device:LED_ALT D2
 U 1 1 60B4B1B5
 P 5200 3130
-F 0 "D?" V 5239 3012 50  0000 R CNN
+F 0 "D2" V 5239 3012 50  0000 R CNN
 F 1 "Red_LED" V 5148 3012 50  0000 R CNN
-F 2 "" H 5200 3130 50  0001 C CNN
-F 3 "~" H 5200 3130 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5200 3130 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/239/liteon_LTL2R3KRD-EM-1175128.pdf" H 5200 3130 50  0001 C CNN
 	1    5200 3130
 	-1   0    0    -1  
 $EndComp
@@ -699,10 +675,10 @@ Wire Wire Line
 Wire Wire Line
 	2070 1620 1970 1620
 $Comp
-L Device:Jumper JP?
+L Device:Jumper JP1
 U 1 1 60F29D39
 P 2370 1620
-F 0 "JP?" H 2370 1884 50  0000 C CNN
+F 0 "JP1" H 2370 1884 50  0000 C CNN
 F 1 "Wire" H 2370 1793 50  0000 C CNN
 F 2 "" H 2370 1620 50  0001 C CNN
 F 3 "~" H 2370 1620 50  0001 C CNN
@@ -720,10 +696,10 @@ Wire Wire Line
 Wire Wire Line
 	1670 2040 1650 2040
 $Comp
-L Connector:Screw_Terminal_01x02 J?
+L Connector:Screw_Terminal_01x02 J2
 U 1 1 60704D74
 P 1970 1400
-F 0 "J?" V 1934 1212 50  0000 R CNN
+F 0 "J2" V 1934 1212 50  0000 R CNN
 F 1 "AC_OUT" V 1843 1212 50  0000 R CNN
 F 2 "" H 1970 1400 50  0001 C CNN
 F 3 "~" H 1970 1400 50  0001 C CNN
@@ -739,17 +715,6 @@ Wire Wire Line
 	1140 2180 1670 2180
 Wire Wire Line
 	1140 2080 1140 2180
-$Comp
-L power:+5V #PWR?
-U 1 1 60669583
-P 1140 2080
-F 0 "#PWR?" H 1140 1930 50  0001 C CNN
-F 1 "+5V" H 1155 2253 50  0000 C CNN
-F 2 "" H 1140 2080 50  0001 C CNN
-F 3 "" H 1140 2080 50  0001 C CNN
-	1    1140 2080
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	2260 2390 2260 2180
 Connection ~ 2260 2390
@@ -764,10 +729,10 @@ Wire Wire Line
 Wire Wire Line
 	2260 2850 2260 3010
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR010
 U 1 1 6066CAD0
 P 2260 3010
-F 0 "#PWR?" H 2260 2760 50  0001 C CNN
+F 0 "#PWR010" H 2260 2760 50  0001 C CNN
 F 1 "Earth" H 2260 2860 50  0001 C CNN
 F 2 "" H 2260 3010 50  0001 C CNN
 F 3 "~" H 2260 3010 50  0001 C CNN
@@ -775,10 +740,10 @@ F 3 "~" H 2260 3010 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR011
 U 1 1 6066BDBF
 P 2660 3010
-F 0 "#PWR?" H 2660 2760 50  0001 C CNN
+F 0 "#PWR011" H 2660 2760 50  0001 C CNN
 F 1 "Earth" H 2660 2860 50  0001 C CNN
 F 2 "" H 2660 3010 50  0001 C CNN
 F 3 "~" H 2660 3010 50  0001 C CNN
@@ -786,10 +751,10 @@ F 3 "~" H 2660 3010 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148 D?
+L Diode:1N4148 D1
 U 1 1 6064FBAF
 P 1920 2390
-F 0 "D?" H 1874 2469 50  0000 R TNN
+F 0 "D1" H 1874 2469 50  0000 R TNN
 F 1 "1N4148" H 1965 2469 50  0000 L TNN
 F 2 "Usr_pretty_lib:SODFL1608X70N" H 1920 2215 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1920 2390 50  0001 C CNN
@@ -797,21 +762,21 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 1920 
 	1    0    0    1   
 $EndComp
 $Comp
-L Usr_Sym:HF32F-G_005-HS RLY?
+L Usr_Sym:HF32F-G_005-HS RLY1
 U 1 1 606571D6
 P 1920 2090
-F 0 "RLY?" H 1920 2405 50  0000 C CNN
+F 0 "RLY1" H 1920 2405 50  0000 C CNN
 F 1 "HF32F-G_005-HS" H 1920 2314 50  0000 C CNN
-F 2 "" H 1920 2290 50  0001 C CNN
+F 2 "Usr_pretty_lib:HF32F-G 005-HS" H 1920 2290 50  0001 C CNN
 F 3 "https://www.alldatasheet.com/datasheet-pdf/pdf/312373/HONGFA/HF32F-G.html" H 1920 2290 50  0001 C CNN
 	1    1920 2090
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR019
 U 1 1 609572C5
 P 5400 3130
-F 0 "#PWR?" H 5400 2880 50  0001 C CNN
+F 0 "#PWR019" H 5400 2880 50  0001 C CNN
 F 1 "Earth" H 5400 2980 50  0001 C CNN
 F 2 "" H 5400 3130 50  0001 C CNN
 F 3 "~" H 5400 3130 50  0001 C CNN
@@ -821,23 +786,23 @@ $EndComp
 Wire Wire Line
 	5350 3130 5400 3130
 $Comp
-L Usr_Sym:STM32WB55 U?
+L Usr_Sym:STM32WB55 U1
 U 1 1 607637C6
 P 3410 4180
-F 0 "U?" H 3438 4226 50  0000 C CNN
+F 0 "U1" H 3438 4226 50  0000 C CNN
 F 1 "STM32WB55" H 3202 4135 50  0000 L CNN
-F 2 "" H 3410 4230 50  0001 C CNN
-F 3 "" H 3410 4230 50  0001 C CNN
+F 2 "Usr_pretty_lib:QFN50P700X700X60-49N" H 3410 4230 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32wb55cc.pdf" H 3410 4230 50  0001 C CNN
 	1    3410 4180
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5000 3130 5050 3130
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR014
 U 1 1 609465CA
 P 3760 5030
-F 0 "#PWR?" H 3760 4780 50  0001 C CNN
+F 0 "#PWR014" H 3760 4780 50  0001 C CNN
 F 1 "Earth" H 3760 4880 50  0001 C CNN
 F 2 "" H 3760 5030 50  0001 C CNN
 F 3 "~" H 3760 5030 50  0001 C CNN
@@ -845,10 +810,10 @@ F 3 "~" H 3760 5030 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR015
 U 1 1 60947762
 P 4260 4030
-F 0 "#PWR?" H 4260 3780 50  0001 C CNN
+F 0 "#PWR015" H 4260 3780 50  0001 C CNN
 F 1 "Earth" H 4260 3880 50  0001 C CNN
 F 2 "" H 4260 4030 50  0001 C CNN
 F 3 "~" H 4260 4030 50  0001 C CNN
@@ -856,23 +821,23 @@ F 3 "~" H 4260 4030 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C Z?
+L Device:C Z1
 U 1 1 609A98E6
 P 5520 6160
-F 0 "Z?" H 5635 6206 50  0000 L CNN
+F 0 "Z1" H 5635 6206 50  0000 L CNN
 F 1 "C" H 5635 6115 50  0000 L CNN
-F 2 "" H 5558 6010 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5558 6010 50  0001 C CNN
 F 3 "~" H 5520 6160 50  0001 C CNN
 	1    5520 6160
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C Z?
+L Device:C Z3
 U 1 1 609B4518
 P 6020 6160
-F 0 "Z?" H 6135 6206 50  0000 L CNN
+F 0 "Z3" H 6135 6206 50  0000 L CNN
 F 1 "C" H 6135 6115 50  0000 L CNN
-F 2 "" H 6058 6010 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6058 6010 50  0001 C CNN
 F 3 "~" H 6020 6160 50  0001 C CNN
 	1    6020 6160
 	1    0    0    -1  
@@ -886,10 +851,10 @@ Wire Wire Line
 Wire Wire Line
 	6020 5960 6020 6010
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR022
 U 1 1 609E9A1B
 P 5520 6310
-F 0 "#PWR?" H 5520 6060 50  0001 C CNN
+F 0 "#PWR022" H 5520 6060 50  0001 C CNN
 F 1 "Earth" H 5520 6160 50  0001 C CNN
 F 2 "" H 5520 6310 50  0001 C CNN
 F 3 "~" H 5520 6310 50  0001 C CNN
@@ -897,10 +862,10 @@ F 3 "~" H 5520 6310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR023
 U 1 1 609EA572
 P 6020 6310
-F 0 "#PWR?" H 6020 6060 50  0001 C CNN
+F 0 "#PWR023" H 6020 6060 50  0001 C CNN
 F 1 "Earth" H 6020 6160 50  0001 C CNN
 F 2 "" H 6020 6310 50  0001 C CNN
 F 3 "~" H 6020 6310 50  0001 C CNN
@@ -908,34 +873,34 @@ F 3 "~" H 6020 6310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R Z?
+L Device:R Z2
 U 1 1 60975224
 P 5770 5960
-F 0 "Z?" V 5563 5960 50  0000 C CNN
+F 0 "Z2" V 5563 5960 50  0000 C CNN
 F 1 "R" V 5654 5960 50  0000 C CNN
-F 2 "" V 5700 5960 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5700 5960 50  0001 C CNN
 F 3 "~" H 5770 5960 50  0001 C CNN
 	1    5770 5960
 	0    1    1    0   
 $EndComp
 $Comp
-L Usr_Sym:902-9040-fermbuddy U?
+L Usr_Sym:902-9040-fermbuddy U2
 U 1 1 60965CBD
 P 5020 5810
-F 0 "U?" H 5020 6111 39  0000 C CNN
+F 0 "U2" H 5020 6111 39  0000 C CNN
 F 1 "902-9040" H 5020 6036 39  0000 C CNN
-F 2 "" H 5020 5810 39  0001 C CNN
-F 3 "" H 5020 5810 39  0001 C CNN
+F 2 "Usr_pretty_lib:902-9040" H 5020 5810 39  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/18/1/amph_s_a0000444456_1-2260551.pdf" H 5020 5810 39  0001 C CNN
 	1    5020 5810
 	1    0    0    -1  
 $EndComp
 $Comp
-L Usr_Sym:MLPF-WB55-01E3 IPD?
+L Usr_Sym:MLPF-WB55-01E3 IPD1
 U 1 1 6097391B
 P 4220 6060
-F 0 "IPD?" H 4170 6425 50  0000 C CNN
+F 0 "IPD1" H 4170 6425 50  0000 C CNN
 F 1 "MLPF-WB55-01E3" H 4170 6334 50  0000 C CNN
-F 2 "" H 4220 6060 50  0001 C CNN
+F 2 "Usr_pretty_lib:SON160P500X500X140-6N" H 4220 6060 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/mlpf-wb55-01e3.pdf" H 4220 6060 50  0001 C CNN
 	1    4220 6060
 	1    0    0    -1  
@@ -949,10 +914,10 @@ Wire Wire Line
 	6020 5960 6120 5960
 Connection ~ 6020 5960
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR016
 U 1 1 60A064A5
 P 4320 6420
-F 0 "#PWR?" H 4320 6170 50  0001 C CNN
+F 0 "#PWR016" H 4320 6170 50  0001 C CNN
 F 1 "Earth" H 4320 6270 50  0001 C CNN
 F 2 "" H 4320 6420 50  0001 C CNN
 F 3 "~" H 4320 6420 50  0001 C CNN
@@ -974,10 +939,10 @@ Wire Wire Line
 	4120 6360 4120 6420
 Connection ~ 4120 6420
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR021
 U 1 1 60A32EF3
 P 5460 5760
-F 0 "#PWR?" H 5460 5510 50  0001 C CNN
+F 0 "#PWR021" H 5460 5510 50  0001 C CNN
 F 1 "Earth" H 5460 5610 50  0001 C CNN
 F 2 "" H 5460 5760 50  0001 C CNN
 F 3 "~" H 5460 5760 50  0001 C CNN
@@ -987,10 +952,10 @@ $EndComp
 Wire Wire Line
 	5370 5810 5370 5710
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR018
 U 1 1 60A54E2C
 P 4580 5760
-F 0 "#PWR?" H 4580 5510 50  0001 C CNN
+F 0 "#PWR018" H 4580 5510 50  0001 C CNN
 F 1 "Earth" H 4580 5610 50  0001 C CNN
 F 2 "" H 4580 5760 50  0001 C CNN
 F 3 "~" H 4580 5760 50  0001 C CNN
@@ -1012,10 +977,10 @@ Connection ~ 5370 5710
 Wire Wire Line
 	3820 5960 3660 5960
 $Comp
-L Transistor_FET:2N7002 Q?
+L Transistor_FET:2N7002 Q1
 U 1 1 60649182
 P 2360 2650
-F 0 "Q?" H 2564 2696 50  0000 L CNN
+F 0 "Q1" H 2564 2696 50  0000 L CNN
 F 1 "2N7002" H 2564 2605 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2560 2575 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2360 2650 50  0001 L CNN
@@ -1023,12 +988,12 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2360 2650 50  000
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R5
 U 1 1 60653AB7
 P 2660 2840
-F 0 "R?" H 2728 2886 50  0000 L CNN
+F 0 "R5" H 2728 2886 50  0000 L CNN
 F 1 "10k" H 2728 2795 50  0000 L CNN
-F 2 "" V 2700 2830 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2700 2830 50  0001 C CNN
 F 3 "~" H 2660 2840 50  0001 C CNN
 	1    2660 2840
 	-1   0    0    -1  
@@ -1049,12 +1014,12 @@ Wire Wire Line
 Wire Wire Line
 	5050 3630 5000 3630
 $Comp
-L Device:R_US R?
+L Device:R_US R8
 U 1 1 609B7C5B
 P 4850 3630
-F 0 "R?" H 4918 3676 50  0000 L CNN
+F 0 "R8" H 4918 3676 50  0000 L CNN
 F 1 "750R" H 4918 3585 50  0000 L CNN
-F 2 "" V 4890 3620 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 3620 50  0001 C CNN
 F 3 "~" H 4850 3630 50  0001 C CNN
 	1    4850 3630
 	0    -1   1    0   
@@ -1062,10 +1027,10 @@ $EndComp
 Wire Wire Line
 	5400 3630 5350 3630
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR020
 U 1 1 60958556
 P 5400 3630
-F 0 "#PWR?" H 5400 3380 50  0001 C CNN
+F 0 "#PWR020" H 5400 3380 50  0001 C CNN
 F 1 "Earth" H 5400 3480 50  0001 C CNN
 F 2 "" H 5400 3630 50  0001 C CNN
 F 3 "~" H 5400 3630 50  0001 C CNN
@@ -1073,13 +1038,13 @@ F 3 "~" H 5400 3630 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:LED_ALT D?
+L Device:LED_ALT D3
 U 1 1 60B58017
 P 5200 3630
-F 0 "D?" V 5239 3513 50  0000 R CNN
+F 0 "D3" V 5239 3513 50  0000 R CNN
 F 1 "Green_LED" V 5148 3513 50  0000 R CNN
-F 2 "" H 5200 3630 50  0001 C CNN
-F 3 "~" H 5200 3630 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5200 3630 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/239/liteon_LTL2R3KGD-EM%20Preliminary-1175478.pdf" H 5200 3630 50  0001 C CNN
 	1    5200 3630
 	-1   0    0    -1  
 $EndComp
@@ -1090,12 +1055,12 @@ Wire Wire Line
 Wire Wire Line
 	3660 5030 3660 5960
 $Comp
-L Usr_Sym:AN3359 Z?
+L Usr_Sym:AN3359 Z4
 U 1 1 60972131
 P 6120 6060
-F 0 "Z?" V 6488 6254 50  0000 L TNN
+F 0 "Z4" V 6488 6254 50  0000 L TNN
 F 1 "AN3359" V 6448 6163 50  0000 L CNN
-F 2 "" H 6120 6060 50  0001 C CNN
+F 2 "Usr_pretty_lib:AN3359_antenna" H 6120 6060 50  0001 C CNN
 F 3 "" H 6120 6060 50  0001 C CNN
 	1    6120 6060
 	0    1    1    0   
@@ -1110,10 +1075,10 @@ Wire Notes Line
 Text Notes 2010 1040 0    50   ~ 0
 WJ127-5.0-2P
 $Comp
-L Device:C C?
+L Device:C C11
 U 1 1 607C1866
 P 7980 4140
-F 0 "C?" H 8095 4186 50  0000 L CNN
+F 0 "C11" H 8095 4186 50  0000 L CNN
 F 1 "100nF" H 8095 4095 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8018 3990 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 7980 4140 50  0001 C CNN
@@ -1121,10 +1086,10 @@ F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR029
 U 1 1 607C2E1B
 P 7980 4340
-F 0 "#PWR?" H 7980 4090 50  0001 C CNN
+F 0 "#PWR029" H 7980 4090 50  0001 C CNN
 F 1 "Earth" H 7980 4190 50  0001 C CNN
 F 2 "" H 7980 4340 50  0001 C CNN
 F 3 "~" H 7980 4340 50  0001 C CNN
@@ -1134,10 +1099,10 @@ $EndComp
 Wire Wire Line
 	7980 4290 7980 4340
 $Comp
-L Device:C C?
+L Device:C C13
 U 1 1 607E9B06
 P 8530 4140
-F 0 "C?" H 8645 4186 50  0000 L CNN
+F 0 "C13" H 8645 4186 50  0000 L CNN
 F 1 "100nF" H 8645 4095 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8568 3990 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 8530 4140 50  0001 C CNN
@@ -1145,10 +1110,10 @@ F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR033
 U 1 1 607E9B0C
 P 8530 4340
-F 0 "#PWR?" H 8530 4090 50  0001 C CNN
+F 0 "#PWR033" H 8530 4090 50  0001 C CNN
 F 1 "Earth" H 8530 4190 50  0001 C CNN
 F 2 "" H 8530 4340 50  0001 C CNN
 F 3 "~" H 8530 4340 50  0001 C CNN
@@ -1157,7 +1122,7 @@ F 3 "~" H 8530 4340 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8530 4290 8530 4340
-Text GLabel 7490 3970 2    50   Input ~ 0
+Text GLabel 7490 3970 2    50   Output ~ 0
 VDDA
 Wire Wire Line
 	7440 3970 7440 3990
@@ -1169,21 +1134,10 @@ Wire Wire Line
 Wire Wire Line
 	7440 3940 7440 3970
 $Comp
-L power:+3V3 #PWR?
-U 1 1 608EF24C
-P 7440 3940
-F 0 "#PWR?" H 7440 3790 50  0001 C CNN
-F 1 "+3V3" H 7455 4113 50  0000 C CNN
-F 2 "" H 7440 3940 50  0001 C CNN
-F 3 "" H 7440 3940 50  0001 C CNN
-	1    7440 3940
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR?
+L power:Earth #PWR027
 U 1 1 608EF246
 P 7440 4340
-F 0 "#PWR?" H 7440 4090 50  0001 C CNN
+F 0 "#PWR027" H 7440 4090 50  0001 C CNN
 F 1 "Earth" H 7440 4190 50  0001 C CNN
 F 2 "" H 7440 4340 50  0001 C CNN
 F 3 "~" H 7440 4340 50  0001 C CNN
@@ -1191,17 +1145,17 @@ F 3 "~" H 7440 4340 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C9
 U 1 1 608EF240
 P 7440 4140
-F 0 "C?" H 7555 4186 50  0000 L CNN
+F 0 "C9" H 7555 4186 50  0000 L CNN
 F 1 "100nF" H 7555 4095 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7478 3990 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 7440 4140 50  0001 C CNN
 	1    7440 4140
 	1    0    0    -1  
 $EndComp
-Text GLabel 8580 3970 2    50   Input ~ 0
+Text GLabel 8580 3970 2    50   Output ~ 0
 VDDUSB
 Wire Wire Line
 	8530 3970 8530 3990
@@ -1210,37 +1164,15 @@ Wire Wire Line
 	8580 3970 8530 3970
 Wire Wire Line
 	8530 3940 8530 3970
-$Comp
-L power:+3V3 #PWR?
-U 1 1 607E9B12
-P 8530 3940
-F 0 "#PWR?" H 8530 3790 50  0001 C CNN
-F 1 "+3V3" H 8545 4113 50  0000 C CNN
-F 2 "" H 8530 3940 50  0001 C CNN
-F 3 "" H 8530 3940 50  0001 C CNN
-	1    8530 3940
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7980 3970 7980 3990
 Connection ~ 7980 3970
 Wire Wire Line
 	8030 3970 7980 3970
-Text GLabel 8030 3970 2    50   Input ~ 0
+Text GLabel 8030 3970 2    50   Output ~ 0
 VBAT
 Wire Wire Line
 	7980 3940 7980 3970
-$Comp
-L power:+3V3 #PWR?
-U 1 1 607C3758
-P 7980 3940
-F 0 "#PWR?" H 7980 3790 50  0001 C CNN
-F 1 "+3V3" H 7995 4113 50  0000 C CNN
-F 2 "" H 7980 3940 50  0001 C CNN
-F 3 "" H 7980 3940 50  0001 C CNN
-	1    7980 3940
-	1    0    0    -1  
-$EndComp
 Text GLabel 10420 3030 2    50   Input ~ 0
 VDDRF
 Wire Wire Line
@@ -1252,10 +1184,10 @@ Connection ~ 9910 3430
 Wire Wire Line
 	9910 3480 9910 3430
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR037
 U 1 1 60797B33
 P 9910 3480
-F 0 "#PWR?" H 9910 3230 50  0001 C CNN
+F 0 "#PWR037" H 9910 3230 50  0001 C CNN
 F 1 "Earth" H 9910 3330 50  0001 C CNN
 F 2 "" H 9910 3480 50  0001 C CNN
 F 3 "~" H 9910 3480 50  0001 C CNN
@@ -1271,17 +1203,6 @@ Wire Wire Line
 Connection ~ 9710 3030
 Wire Wire Line
 	9710 2980 9710 3030
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60797B28
-P 9710 2980
-F 0 "#PWR?" H 9710 2830 50  0001 C CNN
-F 1 "+3V3" H 9725 3153 50  0000 C CNN
-F 2 "" H 9710 2980 50  0001 C CNN
-F 3 "" H 9710 2980 50  0001 C CNN
-	1    9710 2980
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10110 3030 10110 3080
 Wire Wire Line
@@ -1289,10 +1210,10 @@ Wire Wire Line
 Wire Wire Line
 	9710 3080 9710 3030
 $Comp
-L Device:C C?
+L Device:C C18
 U 1 1 60797B1F
 P 10110 3230
-F 0 "C?" H 10225 3276 50  0000 L CNN
+F 0 "C18" H 10225 3276 50  0000 L CNN
 F 1 "100pF" H 10146 3146 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 10148 3080 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 10110 3230 50  0001 C CNN
@@ -1300,10 +1221,10 @@ F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C17
 U 1 1 60797B19
 P 9710 3230
-F 0 "C?" H 9825 3276 50  0000 L CNN
+F 0 "C17" H 9825 3276 50  0000 L CNN
 F 1 "100nF" H 9746 3145 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 9748 3080 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 9710 3230 50  0001 C CNN
@@ -1337,10 +1258,10 @@ Connection ~ 8460 3430
 Wire Wire Line
 	8460 3480 8460 3430
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR031
 U 1 1 60829764
 P 8460 3480
-F 0 "#PWR?" H 8460 3230 50  0001 C CNN
+F 0 "#PWR031" H 8460 3230 50  0001 C CNN
 F 1 "Earth" H 8460 3330 50  0001 C CNN
 F 2 "" H 8460 3480 50  0001 C CNN
 F 3 "~" H 8460 3480 50  0001 C CNN
@@ -1356,17 +1277,6 @@ Wire Wire Line
 Connection ~ 8260 3030
 Wire Wire Line
 	8260 2980 8260 3030
-$Comp
-L power:+3V3 #PWR?
-U 1 1 6080FC38
-P 8260 2980
-F 0 "#PWR?" H 8260 2830 50  0001 C CNN
-F 1 "+3V3" H 8275 3153 50  0000 C CNN
-F 2 "" H 8260 2980 50  0001 C CNN
-F 3 "" H 8260 2980 50  0001 C CNN
-	1    8260 2980
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8660 3030 8660 3080
 Wire Wire Line
@@ -1374,10 +1284,10 @@ Wire Wire Line
 Wire Wire Line
 	8260 3080 8260 3030
 $Comp
-L Device:C C?
+L Device:C C14
 U 1 1 6080FC2D
 P 8660 3230
-F 0 "C?" H 8775 3276 50  0000 L CNN
+F 0 "C14" H 8775 3276 50  0000 L CNN
 F 1 "100nF" H 8696 3146 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 8698 3080 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 8660 3230 50  0001 C CNN
@@ -1385,10 +1295,10 @@ F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C12
 U 1 1 6080FC27
 P 8260 3230
-F 0 "C?" H 8375 3276 50  0000 L CNN
+F 0 "C12" H 8375 3276 50  0000 L CNN
 F 1 "4.7μF" H 8296 3145 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 8298 3080 50  0001 C CNN
 F 3 "https://br.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL03A475MQ5C65C?qs=sGAEpiMZZMuMW9TJLBQkXnK2T9n4gY42cYfvJEEERh4%3D" H 8260 3230 50  0001 C CNN
@@ -1422,10 +1332,10 @@ Wire Wire Line
 Wire Wire Line
 	7010 3460 7010 3430
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR025
 U 1 1 607A190D
 P 7010 3460
-F 0 "#PWR?" H 7010 3210 50  0001 C CNN
+F 0 "#PWR025" H 7010 3210 50  0001 C CNN
 F 1 "Earth" H 7010 3310 50  0001 C CNN
 F 2 "" H 7010 3460 50  0001 C CNN
 F 3 "~" H 7010 3460 50  0001 C CNN
@@ -1435,17 +1345,6 @@ $EndComp
 Connection ~ 6410 3030
 Wire Wire Line
 	6410 2980 6410 3030
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60798A97
-P 6410 2980
-F 0 "#PWR?" H 6410 2830 50  0001 C CNN
-F 1 "+3V3" H 6425 3153 50  0000 C CNN
-F 2 "" H 6410 2980 50  0001 C CNN
-F 3 "" H 6410 2980 50  0001 C CNN
-	1    6410 2980
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6810 3030 7210 3030
 Connection ~ 6810 3030
@@ -1463,10 +1362,10 @@ Wire Wire Line
 Wire Wire Line
 	6410 3080 6410 3030
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 6077BE47
 P 6810 3230
-F 0 "C?" H 6925 3276 50  0000 L CNN
+F 0 "C6" H 6925 3276 50  0000 L CNN
 F 1 "100nF" H 6846 3146 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6848 3080 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 6810 3230 50  0001 C CNN
@@ -1474,10 +1373,10 @@ F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C5
 U 1 1 6077BE41
 P 6410 3230
-F 0 "C?" H 6525 3276 50  0000 L CNN
+F 0 "C5" H 6525 3276 50  0000 L CNN
 F 1 "4.7μF" H 6446 3145 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 6448 3080 50  0001 C CNN
 F 3 "https://br.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL03A475MQ5C65C?qs=sGAEpiMZZMuMW9TJLBQkXnK2T9n4gY42cYfvJEEERh4%3D" H 6410 3230 50  0001 C CNN
@@ -1485,10 +1384,10 @@ F 3 "https://br.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL03A475MQ5C6
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C10
 U 1 1 6077A107
 P 7610 3230
-F 0 "C?" H 7725 3276 50  0000 L CNN
+F 0 "C10" H 7725 3276 50  0000 L CNN
 F 1 "100nF" H 7646 3146 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7648 3080 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 7610 3230 50  0001 C CNN
@@ -1496,10 +1395,10 @@ F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C8
 U 1 1 6077069B
 P 7210 3230
-F 0 "C?" H 7325 3276 50  0000 L CNN
+F 0 "C8" H 7325 3276 50  0000 L CNN
 F 1 "100nF" H 7246 3146 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7248 3080 50  0001 C CNN
 F 3 "https://br.mouser.com/datasheet/2/40/AVX_01005_Ultra_Miniature_Capacitors-1920440.pdf" H 7210 3230 50  0001 C CNN
@@ -1529,36 +1428,143 @@ Wire Notes Line
 Text Notes 2680 1830 0    50   ~ 0
 Neutral Conductor
 $Comp
-L Device:R_US R?
+L Device:R_US R7
 U 1 1 609AB9F8
 P 4850 3130
-F 0 "R?" H 4918 3176 50  0000 L CNN
+F 0 "R7" H 4918 3176 50  0000 L CNN
 F 1 "750R" H 4918 3085 50  0000 L CNN
-F 2 "" V 4890 3120 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 3120 50  0001 C CNN
 F 3 "~" H 4850 3130 50  0001 C CNN
 	1    4850 3130
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R6
 U 1 1 60652F32
 P 2910 2650
-F 0 "R?" V 2978 2696 50  0000 L CNN
+F 0 "R6" V 2978 2696 50  0000 L CNN
 F 1 "1k" V 2978 2526 50  0000 L CNN
-F 2 "" V 2950 2640 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2950 2640 50  0001 C CNN
 F 3 "~" H 2910 2650 50  0001 C CNN
 	1    2910 2650
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:Fuse F?
+L Device:Fuse F1
 U 1 1 606867F7
 P 6510 1400
-F 0 "F?" V 6313 1400 50  0000 C CNN
+F 0 "F1" V 6313 1400 50  0000 C CNN
 F 1 "JFC2410-0500TS" V 6404 1339 39  0000 L CNN
 F 2 "Fuse:Fuse_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 6440 1400 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/1806130715_Littelfuse-0230-500MXP_C178894.pdf" H 6510 1400 50  0001 C CNN
 	1    6510 1400
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 609DD62C
+P 8850 1360
+F 0 "TP2" H 8908 1478 50  0000 L CNN
+F 1 "TestPoint" H 8908 1387 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9050 1360 50  0001 C CNN
+F 3 "~" H 9050 1360 50  0001 C CNN
+	1    8850 1360
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 609DEAD4
+P 10260 1360
+F 0 "TP3" H 10318 1478 50  0000 L CNN
+F 1 "TestPoint" H 10318 1387 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10460 1360 50  0001 C CNN
+F 3 "~" H 10460 1360 50  0001 C CNN
+	1    10260 1360
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10260 1360 10260 1400
+Wire Wire Line
+	8850 1360 8850 1400
+$Comp
+L Connector:TestPoint TP1
+U 1 1 609CFD5F
+P 3260 5030
+F 0 "TP1" H 3203 5056 50  0000 R BNN
+F 1 "TestPoint" H 3203 5147 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded" H 3460 5030 50  0001 C CNN
+F 3 "~" H 3460 5030 50  0001 C CNN
+	1    3260 5030
+	1    0    0    1   
+$EndComp
+NoConn ~ 2860 5030
+NoConn ~ 2960 5030
+NoConn ~ 3060 5030
+NoConn ~ 3160 5030
+NoConn ~ 3360 5030
+NoConn ~ 3460 5030
+NoConn ~ 4260 4630
+NoConn ~ 4260 4530
+NoConn ~ 4260 4430
+NoConn ~ 4260 4330
+NoConn ~ 4260 4230
+NoConn ~ 3860 3330
+NoConn ~ 3460 3330
+NoConn ~ 3360 3330
+NoConn ~ 3260 3330
+NoConn ~ 3060 3330
+NoConn ~ 2960 3330
+NoConn ~ 2560 4030
+NoConn ~ 2560 4130
+NoConn ~ 2560 4530
+NoConn ~ 2560 4630
+NoConn ~ 2560 4730
+Text GLabel 10870 1300 1    50   Output ~ 0
+3V3
+Text GLabel 6410 2980 1    50   Input ~ 0
+3V3
+Text GLabel 8260 2980 1    50   Input ~ 0
+3V3
+Text GLabel 9710 2980 1    50   Input ~ 0
+3V3
+Text GLabel 7440 3940 1    50   Input ~ 0
+3V3
+Text GLabel 7980 3940 1    50   Input ~ 0
+3V3
+Text GLabel 8530 3940 1    50   Input ~ 0
+3V3
+Text GLabel 9300 1300 1    50   Output ~ 0
+5V
+Text GLabel 1140 2080 1    50   Input ~ 0
+5V
+Wire Wire Line
+	7760 1500 7810 1500
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60CDE29F
+P 7810 1500
+F 0 "#FLG0101" H 7810 1575 50  0001 C CNN
+F 1 "PWR_FLAG" H 7810 1673 50  0001 C CNN
+F 2 "" H 7810 1500 50  0001 C CNN
+F 3 "~" H 7810 1500 50  0001 C CNN
+	1    7810 1500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7810 1500
+Wire Wire Line
+	7810 1500 7860 1500
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60CDF74C
+P 7810 1700
+F 0 "#FLG0102" H 7810 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 7810 1873 50  0001 C CNN
+F 2 "" H 7810 1700 50  0001 C CNN
+F 3 "~" H 7810 1700 50  0001 C CNN
+	1    7810 1700
+	-1   0    0    1   
+$EndComp
+Connection ~ 7810 1700
+Wire Wire Line
+	7810 1700 7760 1700
 $EndSCHEMATC

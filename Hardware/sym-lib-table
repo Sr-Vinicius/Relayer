@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Usr_Sym)(type Legacy)(uri "${KIPRJMOD}/Custom Symbols/Usr_Sym.lib")(options "")(descr ""))
+  (lib (name relayer_hw-rescue)(type Legacy)(uri ${KIPRJMOD}/relayer_hw-rescue.lib)(options "")(descr ""))
 )

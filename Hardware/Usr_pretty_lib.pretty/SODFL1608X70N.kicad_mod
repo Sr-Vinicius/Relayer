@@ -1,5 +1,5 @@
-(module SODFL1608X70N (layer F.Cu) (tedit 60962494)
-  (fp_text reference REF** (at 0.58495 -1.388) (layer F.SilkS)
+(module SODFL1608X70N (layer F.Cu) (tedit 609C2C4A)
+  (fp_text reference D** (at 0.45 -1.2) (layer F.SilkS)
     (effects (font (size 0.64 0.64) (thickness 0.015)))
   )
   (fp_text value SODFL1608X70N (at 3.81216 1.18938) (layer F.Fab)
