@@ -9,7 +9,7 @@ Date ""
 Rev "Rev-A"
 Comp "Universidade Federal de Uberlândia"
 Comment1 "All datasheet links are in the components properties ;"
-Comment2 "Max. switching loads of 10A / 2500VA / 300W;"
+Comment2 "Max. switching loads of 3A / approx. 300W;"
 Comment3 "Device projected for home automation purposes;"
 Comment4 ""
 $EndDescr
@@ -767,7 +767,7 @@ U 1 1 606571D6
 P 1920 2090
 F 0 "RLY1" H 1920 2405 50  0000 C CNN
 F 1 "HF32F-G_005-HS" H 1920 2314 50  0000 C CNN
-F 2 "Usr_pretty_lib:HF32F-G 005-HS" H 1920 2290 50  0001 C CNN
+F 2 "Usr_pretty_lib:HF32F-G005-HS" H 1920 2290 50  0001 C CNN
 F 3 "https://www.alldatasheet.com/datasheet-pdf/pdf/312373/HONGFA/HF32F-G.html" H 1920 2290 50  0001 C CNN
 	1    1920 2090
 	-1   0    0    -1  
@@ -1456,7 +1456,7 @@ P 6510 1400
 F 0 "F1" V 6313 1400 50  0000 C CNN
 F 1 "JFC2410-0500TS" V 6404 1339 39  0000 L CNN
 F 2 "Fuse:Fuse_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 6440 1400 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1806130715_Littelfuse-0230-500MXP_C178894.pdf" H 6510 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809211427_Shenzhen-JDT-Fuse-JFC2410-0500TS_C136377.pdf" H 6510 1400 50  0001 C CNN
 	1    6510 1400
 	0    1    1    0   
 $EndComp

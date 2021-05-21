@@ -9,7 +9,7 @@ Date ""
 Rev "Rev-A"
 Comp "Universidade Federal de Uberlândia"
 Comment1 "All datasheet links are in the components properties ;"
-Comment2 "Max. switching loads of 10A / 2500VA / 300W;"
+Comment2 "Max. switching loads of 3A / approx. 300W;"
 Comment3 "Device projected for home automation purposes;"
 Comment4 ""
 $EndDescr
@@ -344,7 +344,7 @@ F 3 "https://www.alldatasheet.com/datasheet-pdf/pdf/612038/MORNSUN/FL2D-Z5-103.h
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7860 1700 7760 1700
+	7860 1700 7810 1700
 Wire Wire Line
 	7360 1700 7310 1700
 Wire Wire Line
@@ -1456,7 +1456,7 @@ P 6510 1400
 F 0 "F1" V 6313 1400 50  0000 C CNN
 F 1 "JFC2410-0500TS" V 6404 1339 39  0000 L CNN
 F 2 "Fuse:Fuse_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 6440 1400 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/lcsc/1806130715_Littelfuse-0230-500MXP_C178894.pdf" H 6510 1400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809211427_Shenzhen-JDT-Fuse-JFC2410-0500TS_C136377.pdf" H 6510 1400 50  0001 C CNN
 	1    6510 1400
 	0    1    1    0   
 $EndComp
@@ -1553,4 +1553,18 @@ $EndComp
 Connection ~ 7810 1500
 Wire Wire Line
 	7810 1500 7860 1500
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60CDF74C
+P 7810 1700
+F 0 "#FLG0102" H 7810 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 7810 1873 50  0001 C CNN
+F 2 "" H 7810 1700 50  0001 C CNN
+F 3 "~" H 7810 1700 50  0001 C CNN
+	1    7810 1700
+	-1   0    0    1   
+$EndComp
+Connection ~ 7810 1700
+Wire Wire Line
+	7810 1700 7760 1700
 $EndSCHEMATC

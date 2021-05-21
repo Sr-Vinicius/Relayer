@@ -1,4 +1,4 @@
-(module FL2D-Z5-103 (layer F.Cu) (tedit 609C1ABC)
+(module FL2D-Z5-103 (layer F.Cu) (tedit 60A6FB0B)
   (fp_text reference CHK** (at 0 3) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -23,4 +23,9 @@
   (pad 3 thru_hole circle (at 10 0) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask))
   (pad 1 thru_hole circle (at 0 -4.5) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 0 0) (size 2.4 2.4) (drill 1.2) (layers *.Cu *.Mask))
+  (model "${KIPRJMOD}/Custom 3D Models/FL2D-Z5-103-Body.wrl"
+    (offset (xyz 5 -1.5 9))
+    (scale (xyz 0.4 0.4 0.4))
+    (rotate (xyz 0 0 0))
+  )
 )
