@@ -1,4 +1,4 @@
-16955712776401255
+16960582843624826
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -74501,6 +74501,13 @@ transformer flyback
 10
 10
 Usr_pretty_lib
+1TS002B-1900-4300-CT
+
+
+0
+2
+2
+Usr_pretty_lib
 902-9040
 
 
@@ -74563,6 +74570,20 @@ SON160P500X500X140-6N
 0
 6
 6
+Usr_pretty_lib
+TerminalBlock_bornier-2_P5.08mm
+simple 2-pin terminal block, pitch 5.08mm, revamped version of bornier2
+terminal block bornier2
+0
+2
+2
+Usr_pretty_lib
+neutral_wire
+
+
+0
+2
+2
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins
