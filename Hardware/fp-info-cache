@@ -1,4 +1,4 @@
-16960582843624826
+16965453813799127
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -74529,12 +74529,33 @@ CAPC1608X90
 2
 2
 Usr_pretty_lib
+Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering
+SMD Crystal 2012/2 http://txccrystal.com/images/pdf/9ht11.pdf, hand-soldering, 2.0x1.2mm^2 package
+SMD SMT crystal hand-soldering
+0
+2
+2
+Usr_pretty_lib
+Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering
+SMD Crystal SERIES SMD3225/4 http://www.txccrystal.com/images/pdf/7m-accuracy.pdf, hand-soldering, 3.2x2.5mm^2 package
+SMD SMT crystal hand-soldering
+0
+4
+4
+Usr_pretty_lib
 FL2D-Z5-103
 
 
 0
 4
 4
+Usr_pretty_lib
+Fuse_2010_5025Metric_Pad1.52x2.65mm_HandSolder
+Fuse SMD 2010 (5025 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
 Usr_pretty_lib
 HF32F-G005-HS
 
