@@ -508,13 +508,13 @@ Wire Wire Line
 $Comp
 L Device:LED_ALT D2
 U 1 1 60B4B1B5
-P 5200 3130
-F 0 "D2" V 5239 3012 50  0000 R CNN
-F 1 "Red_LED" V 5148 3012 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm_Clear" H 5200 3130 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/239/liteon_LTL2R3KRD-EM-1175128.pdf" H 5200 3130 50  0001 C CNN
-	1    5200 3130
-	-1   0    0    -1  
+P 5210 4390
+F 0 "D2" V 5249 4587 50  0000 R CNN
+F 1 "Red_LED" V 5158 4784 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5210 4390 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/239/liteon_LTL2R3KRD-EM-1175128.pdf" H 5210 4390 50  0001 C CNN
+	1    5210 4390
+	-1   0    0    1   
 $EndComp
 Text GLabel 2670 1620 2    50   Input ~ 0
 N
@@ -588,7 +588,7 @@ F 3 "https://www.alldatasheet.com/datasheet-pdf/pdf/312373/HONGFA/HF32F-G.html" 
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 3130 5400 3130
+	5360 4390 5410 4390
 $Comp
 L Usr_Sym:STM32WB55 U1
 U 1 1 607637C6
@@ -601,7 +601,7 @@ F 3 "https://www.st.com/resource/en/datasheet/stm32wb55cc.pdf" H 3410 4230 50  0
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 3130 5050 3130
+	5010 4390 5060 4390
 $Comp
 L Device:C Z1
 U 1 1 609A98E6
@@ -660,7 +660,7 @@ U 1 1 6097391B
 P 4220 6060
 F 0 "IPD1" H 4170 6425 50  0000 C CNN
 F 1 "MLPF-WB55-01E3" H 4170 6334 50  0000 C CNN
-F 2 "Usr_pretty_lib:SON160P500X500X140-6N" H 4220 6060 50  0001 C CNN
+F 2 "Usr_pretty_lib:MLPF-WB55-01E3" H 4220 6060 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/mlpf-wb55-01e3.pdf" H 4220 6060 50  0001 C CNN
 	1    4220 6060
 	1    0    0    -1  
@@ -737,37 +737,33 @@ Wire Wire Line
 Wire Wire Line
 	3160 2650 3160 3330
 Wire Wire Line
-	4260 3630 4700 3630
+	4260 4230 4700 4230
 Wire Wire Line
-	5050 3630 5000 3630
+	5050 4230 5000 4230
 $Comp
 L Device:R_US R8
 U 1 1 609B7C5B
-P 4850 3630
-F 0 "R8" H 4918 3676 50  0000 L CNN
-F 1 "750R" H 4918 3585 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 3620 50  0001 C CNN
-F 3 "~" H 4850 3630 50  0001 C CNN
-	1    4850 3630
-	0    -1   1    0   
+P 4850 4230
+F 0 "R8" H 4918 4276 50  0000 L CNN
+F 1 "750R" H 4918 4185 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 4220 50  0001 C CNN
+F 3 "~" H 4850 4230 50  0001 C CNN
+	1    4850 4230
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5400 3630 5350 3630
+	5400 4230 5350 4230
 $Comp
 L Device:LED_ALT D3
 U 1 1 60B58017
-P 5200 3630
-F 0 "D3" V 5239 3513 50  0000 R CNN
-F 1 "Green_LED" V 5148 3513 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm_Clear" H 5200 3630 50  0001 C CNN
-F 3 "https://br.mouser.com/datasheet/2/239/liteon_LTL2R3KGD-EM%20Preliminary-1175478.pdf" H 5200 3630 50  0001 C CNN
-	1    5200 3630
-	-1   0    0    -1  
+P 5200 4230
+F 0 "D3" V 5239 4113 50  0000 R CNN
+F 1 "Green_LED" V 5148 4113 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 5200 4230 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/239/liteon_LTL2R3KGD-EM%20Preliminary-1175478.pdf" H 5200 4230 50  0001 C CNN
+	1    5200 4230
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3960 3330 3960 3130
-Wire Wire Line
-	3960 3130 4700 3130
 Wire Wire Line
 	3660 5030 3660 5960
 $Comp
@@ -1079,12 +1075,12 @@ Neutral Conductor
 $Comp
 L Device:R_US R7
 U 1 1 609AB9F8
-P 4850 3130
-F 0 "R7" H 4918 3176 50  0000 L CNN
-F 1 "750R" H 4918 3085 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4890 3120 50  0001 C CNN
-F 3 "~" H 4850 3130 50  0001 C CNN
-	1    4850 3130
+P 4860 4390
+F 0 "R7" H 4928 4436 50  0000 L CNN
+F 1 "750R" H 4928 4345 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4900 4380 50  0001 C CNN
+F 3 "~" H 4860 4390 50  0001 C CNN
+	1    4860 4390
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -1155,8 +1151,6 @@ NoConn ~ 3460 5030
 NoConn ~ 4260 4630
 NoConn ~ 4260 4530
 NoConn ~ 4260 4430
-NoConn ~ 4260 4330
-NoConn ~ 4260 4230
 NoConn ~ 3860 3330
 NoConn ~ 3460 3330
 NoConn ~ 3360 3330
@@ -1343,24 +1337,24 @@ Connection ~ 4360 5400
 $Comp
 L power:GND #PWR0112
 U 1 1 60C66853
-P 5400 3130
-F 0 "#PWR0112" H 5400 2880 50  0001 C CNN
-F 1 "GND" H 5405 2957 50  0001 C CNN
-F 2 "" H 5400 3130 50  0001 C CNN
-F 3 "" H 5400 3130 50  0001 C CNN
-	1    5400 3130
+P 5410 4390
+F 0 "#PWR0112" H 5410 4140 50  0001 C CNN
+F 1 "GND" H 5415 4217 50  0001 C CNN
+F 2 "" H 5410 4390 50  0001 C CNN
+F 3 "" H 5410 4390 50  0001 C CNN
+	1    5410 4390
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 60C727AF
-P 5400 3630
-F 0 "#PWR0113" H 5400 3380 50  0001 C CNN
-F 1 "GND" H 5405 3457 50  0001 C CNN
-F 2 "" H 5400 3630 50  0001 C CNN
-F 3 "" H 5400 3630 50  0001 C CNN
-	1    5400 3630
-	0    -1   -1   0   
+P 5400 4230
+F 0 "#PWR0113" H 5400 3980 50  0001 C CNN
+F 1 "GND" H 5405 4057 50  0001 C CNN
+F 2 "" H 5400 4230 50  0001 C CNN
+F 3 "" H 5400 4230 50  0001 C CNN
+	1    5400 4230
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR0114
@@ -1555,4 +1549,14 @@ Wire Notes Line
 Text Notes 2740 5520 0    50   ~ 0
 UFQFPN-48
 NoConn ~ 2560 4430
+Wire Wire Line
+	2300 5930 2300 4730
+Wire Wire Line
+	2300 4730 2560 4730
+Wire Wire Line
+	4710 4390 4500 4390
+Wire Wire Line
+	4500 4390 4500 4330
+Wire Wire Line
+	4500 4330 4260 4330
 $EndSCHEMATC
