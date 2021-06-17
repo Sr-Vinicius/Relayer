@@ -1,4 +1,4 @@
-update=10/06/2021 13:52:29
+update=16/06/2021 18:05:07
 version=1
 last_client=kicad
 [general]
@@ -269,6 +269,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
+Name=DC_power
+Clearance=0.2
+TrackWidth=0.4
+ViaDiameter=0.6
+ViaDrill=0.3
+uViaDiameter=0.4
+uViaDrill=0.2
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/4]
 Name=RF_trace
 Clearance=0.2
 TrackWidth=0.29
