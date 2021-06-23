@@ -1,4 +1,4 @@
-(module neutral_wire (layer F.Cu) (tedit 60D23755)
+(module neutral_wire (layer F.Cu) (tedit 60D374FF)
   (fp_text reference REF** (at 0.5 4.5) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
