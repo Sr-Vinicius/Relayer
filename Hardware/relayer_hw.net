@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Samsung\Desktop\Relayer\Hardware\relayer_hw.sch)
-    (date "23/06/2021 15:05:35")
+    (date "05/07/2021 19:20:41")
     (tool "Eeschema (5.1.5)-3")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -324,7 +324,7 @@
       (tstamp 6080FC2D))
     (comp (ref C12)
       (value 4.7μF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint Capacitor_SMD:C_0402_1005Metric)
       (datasheet https://br.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL03A475MQ5C65C?qs=sGAEpiMZZMuMW9TJLBQkXnK2T9n4gY42cYfvJEEERh4%3D)
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
@@ -338,7 +338,7 @@
       (tstamp 6077BE47))
     (comp (ref C5)
       (value 4.7μF)
-      (footprint Capacitor_SMD:C_0201_0603Metric)
+      (footprint Capacitor_SMD:C_0402_1005Metric)
       (datasheet https://br.mouser.com/ProductDetail/Samsung-Electro-Mechanics/CL03A475MQ5C65C?qs=sGAEpiMZZMuMW9TJLBQkXnK2T9n4gY42cYfvJEEERh4%3D)
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
