@@ -102,7 +102,7 @@ U 1 1 606918D0
 P 8850 1600
 F 0 "C15" H 8965 1646 50  0000 L CNN
 F 1 "220μF" H 8965 1555 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8850 1600 50  0001 C CNN
+F 2 "Usr_pretty_lib:cap_elec" H 8850 1600 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/212/KEM_A4055_ESE-1140496.pdf" H 8850 1600 50  0001 C CNN
 	1    8850 1600
 	1    0    0    -1  
