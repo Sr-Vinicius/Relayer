@@ -1,4 +1,4 @@
-(module cap_elec (layer F.Cu) (tedit 60E8E789)
+(module cap_elec (layer F.Cu) (tedit 60F97922)
   (fp_text reference REF** (at 0 3.8) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -134,4 +134,9 @@
   )
   (pad 1 thru_hole rect (at -1.1 0.2) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 1.1 0.2) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
+  (model ${KISYS3DMOD}/Capacitor_THT.3dshapes/C_Radial_D5.0mm_H11.0mm_P2.00mm.wrl
+    (offset (xyz -1 -0.2 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
