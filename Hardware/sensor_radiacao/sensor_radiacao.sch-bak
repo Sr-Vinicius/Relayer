@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sensor de Radiação Solar"
+Date ""
+Rev "1"
+Comp "Zeus Agrotech"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM358 U?
+U 2 1 613D9E63
+P 7000 4200
+F 0 "U?" H 7000 4567 50  0000 C CNN
+F 1 "LM358" H 7000 4476 50  0000 C CNN
+F 2 "" H 7000 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7000 4200 50  0001 C CNN
+	2    7000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 613DB06E
+P 4130 3760
+F 0 "U?" H 4088 3806 50  0000 L CNN
+F 1 "LM358" H 4088 3715 50  0000 L CNN
+F 2 "" H 4130 3760 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4130 3760 50  0001 C CNN
+	3    4130 3760
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 613DF126
+P 6270 2610
+F 0 "R?" H 6338 2656 50  0000 L CNN
+F 1 "R_US" H 6338 2565 50  0000 L CNN
+F 2 "" V 6310 2600 50  0001 C CNN
+F 3 "~" H 6270 2610 50  0001 C CNN
+	1    6270 2610
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 613DF9B7
+P 3910 2390
+F 0 "R?" H 3978 2436 50  0000 L CNN
+F 1 "R_US" H 3978 2345 50  0000 L CNN
+F 2 "" V 3950 2380 50  0001 C CNN
+F 3 "~" H 3910 2390 50  0001 C CNN
+	1    3910 2390
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 613E188C
+P 3530 3610
+F 0 "C?" H 3645 3656 50  0000 L CNN
+F 1 "CP1" H 3645 3565 50  0000 L CNN
+F 2 "" H 3530 3610 50  0001 C CNN
+F 3 "~" H 3530 3610 50  0001 C CNN
+	1    3530 3610
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 613E78B4
+P 6280 2120
+F 0 "C?" H 6395 2166 50  0000 L CNN
+F 1 "C" H 6395 2075 50  0000 L CNN
+F 2 "" H 6318 1970 50  0001 C CNN
+F 3 "~" H 6280 2120 50  0001 C CNN
+	1    6280 2120
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613E6F21
+P 4030 4060
+F 0 "#PWR?" H 4030 3810 50  0001 C CNN
+F 1 "GND" H 4035 3887 50  0000 C CNN
+F 2 "" H 4030 4060 50  0001 C CNN
+F 3 "" H 4030 4060 50  0001 C CNN
+	1    4030 4060
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4030 3460 4030 3400
+Wire Wire Line
+	4030 3400 3530 3400
+Wire Wire Line
+	3530 3400 3530 3460
+$Comp
+L power:GND #PWR?
+U 1 1 613E8E68
+P 3530 3760
+F 0 "#PWR?" H 3530 3510 50  0001 C CNN
+F 1 "GND" H 3535 3587 50  0000 C CNN
+F 2 "" H 3530 3760 50  0001 C CNN
+F 3 "" H 3530 3760 50  0001 C CNN
+	1    3530 3760
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 613E99E7
+P 4130 3050
+F 0 "J?" V 4094 2762 50  0000 R CNN
+F 1 "Conn_01x04" V 4003 2762 50  0000 R CNN
+F 2 "" H 4130 3050 50  0001 C CNN
+F 3 "~" H 4130 3050 50  0001 C CNN
+	1    4130 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4030 3250 4030 3400
+Connection ~ 4030 3400
+$Comp
+L Device:D_Photo_ALT D?
+U 1 1 613D67AB
+P 5610 3070
+F 0 "D?" V 5606 3347 50  0000 R CNN
+F 1 "D_Photo_ALT" V 5515 3701 50  0000 R CNN
+F 2 "" H 5560 3070 50  0001 C CNN
+F 3 "~" H 5560 3070 50  0001 C CNN
+	1    5610 3070
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5940 3020 5940 2970
+Wire Wire Line
+	5610 3270 5780 3270
+Wire Wire Line
+	5940 3270 5940 3220
+Wire Wire Line
+	5940 2970 5780 2970
+Wire Wire Line
+	6120 2610 5780 2610
+Wire Wire Line
+	5780 2610 5780 2970
+Connection ~ 5780 2970
+Wire Wire Line
+	5780 2970 5610 2970
+Wire Wire Line
+	6420 2610 6740 2610
+Wire Wire Line
+	6740 2610 6740 3120
+Wire Wire Line
+	6740 3120 6540 3120
+$Comp
+L power:GND #PWR?
+U 1 1 6140A4A4
+P 5780 3270
+F 0 "#PWR?" H 5780 3020 50  0001 C CNN
+F 1 "GND" H 5785 3097 50  0000 C CNN
+F 2 "" H 5780 3270 50  0001 C CNN
+F 3 "" H 5780 3270 50  0001 C CNN
+	1    5780 3270
+	1    0    0    -1  
+$EndComp
+Connection ~ 5780 3270
+Wire Wire Line
+	5780 3270 5940 3270
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 613D8B0E
+P 6240 3120
+F 0 "U?" H 6240 3487 50  0000 C CNN
+F 1 "LM358" H 6240 3396 50  0000 C CNN
+F 2 "" H 6240 3120 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6240 3120 50  0001 C CNN
+	1    6240 3120
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6430 2120 6740 2120
+Wire Wire Line
+	6740 2120 6740 2610
+Connection ~ 6740 2610
+Wire Wire Line
+	6130 2120 5780 2120
+Wire Wire Line
+	5780 2120 5780 2610
+Connection ~ 5780 2610
+$EndSCHEMATC

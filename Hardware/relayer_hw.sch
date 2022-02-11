@@ -273,7 +273,7 @@ P 4360 5170
 F 0 "Y2" H 4554 5216 50  0000 L CNN
 F 1 "Crystal_GND23" H 4554 5125 50  0000 L CNN
 F 2 "Usr_pretty_lib:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 4360 5170 50  0001 C CNN
-F 3 "https://br.mouser.com/datasheet/2/122/ECX_1637B-1649431.pdf" H 4360 5170 50  0001 C CNN
+F 3 "https://br.mouser.com/datasheet/2/905/ndk_08142018_NX3225GA-32M-EXS00A-CG02611-1389048.pdf" H 4360 5170 50  0001 C CNN
 	1    4360 5170
 	1    0    0    -1  
 $EndComp
